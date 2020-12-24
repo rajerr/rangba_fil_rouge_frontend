@@ -1,0 +1,20 @@
+-------------------- Auto-Git Log --------------------
+		Thu Dec 24 2020 18:14:51 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/footer/footer.component.css
+* src/app/login/login.component.css
+* src/app/login/login.component.html
+* src/index.html
+* src/styles.css
+
+
+Created files:
+* .autogit/logs/log-24-11-2020-17-44-45.txt
+
+
+Deleted files:
+
+
+Renamed files:
