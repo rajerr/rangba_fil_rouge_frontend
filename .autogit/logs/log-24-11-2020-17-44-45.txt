@@ -1,0 +1,44 @@
+-------------------- Auto-Git Log --------------------
+		Thu Dec 24 2020 17:44:45 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* angular.json
+* package-lock.json
+* package.json
+* src/app/app.component.html
+* src/app/app.module.ts
+
+
+Created files:
+* .autogit/autogit.json
+* src/app/footer/footer.component.css
+* src/app/footer/footer.component.html
+* src/app/footer/footer.component.spec.ts
+* src/app/footer/footer.component.ts
+* src/app/header/header.component.css
+* src/app/header/header.component.html
+* src/app/header/header.component.spec.ts
+* src/app/header/header.component.ts
+* src/app/login/login.component.css
+* src/app/login/login.component.html
+* src/app/login/login.component.spec.ts
+* src/app/login/login.component.ts
+* src/assets/img/IMG_6901.jpg
+* src/assets/img/academy.png
+* src/assets/img/bg.jpg
+* src/assets/img/c3.png
+* src/assets/img/icon/fb.png
+* src/assets/img/icon/forum.png
+* src/assets/img/icon/g+.png
+* src/assets/img/icon/insta.png
+* src/assets/img/icon/linkedin.png
+* src/assets/img/icon/notif.png
+* src/assets/img/icon/tt.png
+* src/assets/img/images.jpeg
+
+
+Deleted files:
+
+
+Renamed files:
