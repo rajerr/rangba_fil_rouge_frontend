@@ -18,6 +18,7 @@ import { FoundComponent } from './found/found.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AddProfileComponent } from './profiles/add-profile/add-profile.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'/login', pathMatch:'full'},
@@ -33,7 +34,12 @@ const routes: Routes = [
   {path:'rendus', component:RendusComponent},
   {path:'briefs', component:BriefsComponent},
   {path:'forums', component:ForumsComponent},
-  {path:'profiles', component:ProfilesComponent},
+  {path:'profiles', component:ProfilesComponent,
+    children:
+    [
+      {path:'add-profile', component:AddProfileComponent},
+    ]
+  },
   {path:'explorers', component:ExplorersComponent},
   {path:'competences', component:CompetencesComponent},
   {path:'groupes-tags', component:GroupeTagsComponent},
