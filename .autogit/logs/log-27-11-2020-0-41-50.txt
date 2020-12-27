@@ -1,0 +1,29 @@
+-------------------- Auto-Git Log --------------------
+		Sun Dec 27 2020 00:41:50 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/app-routing.module.ts
+* src/app/app.component.html
+* src/app/app.module.ts
+* src/app/header/header.component.html
+
+
+Created files:
+* .autogit/logs/log-27-11-2020-0-11-45.txt
+* src/app/found/found.component.css
+* src/app/found/found.component.html
+* src/app/found/found.component.spec.ts
+* src/app/found/found.component.ts
+* src/app/home/home.component.css
+* src/app/home/home.component.html
+* src/app/home/home.component.spec.ts
+* src/app/home/home.component.ts
+* src/assets/img/icon/brief.png
+* src/assets/img/icon/home.png
+
+
+Deleted files:
+
+
+Renamed files:
