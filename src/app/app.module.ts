@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -20,6 +21,8 @@ import { CompetencesComponent } from './competences/competences.component';
 import { GroupeCompetencesComponent } from './groupe-competences/groupe-competences.component';
 import { GroupeTagsComponent } from './groupe-tags/groupe-tags.component';
 import { ProfilesSortieComponent } from './profiles-sortie/profiles-sortie.component';
+import { FormsModule } from '@angular/forms';
+import { HistoriquePromosComponent } from './historique-promos/historique-promos.component';
 
 @NgModule({
   declarations: [
@@ -40,11 +43,15 @@ import { ProfilesSortieComponent } from './profiles-sortie/profiles-sortie.compo
     CompetencesComponent,
     GroupeCompetencesComponent,
     GroupeTagsComponent,
-    ProfilesSortieComponent
+    ProfilesSortieComponent,
+    HistoriquePromosComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand bg-light" href="#"><img src="./assets/img/icon/home.png" alt="Home"></a>
+    <a class="navbar-brand bg-light" [routerLink]="['/']"><img src="./assets/img/icon/home.png" alt="Home"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -7,25 +7,25 @@
     <div class="collapse navbar-collapse" id="navbarColor02">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#" >
+          <a class="nav-link" [routerLink]="['/briefs']" >
           <img class="ml-2" src="./assets/img/icon/brief.png" alt="brief" ><br>
             <span>Briefs</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" [routerLink]="['/rendus']">
             <img class="ml-3" src="./assets/img/icon/rendu.png" alt=""><br>
             <span>Rendus</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" [routerLink]="['/explorers']">
             <img class="ml-3" src="./assets/img/icon/explorer.png" alt=""><br>
             <span>Explorer</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" [routerLink]="['/forums']">
             <img class="ml-2" src="./assets/img/icon/forum.png" alt=""><br>
             <span>Forum</span>
           </a>
@@ -36,27 +36,27 @@
             <span>Parametres</span>
           </a>
           <div class="dropdown-menu">
-            <a class="dropdown-item border-primary" href="#">Promos</a>
+            <a class="dropdown-item border-primary" [routerLink]="['/promos']">Promos</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Referentiels</a>
+            <a class="dropdown-item" [routerLink]="['/referentiels']">Referentiels</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Groupe de competences</a>
+            <a class="dropdown-item" [routerLink]="['/groupes-competences']">Groupe de competences</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">competences</a>
+            <a class="dropdown-item" [routerLink]="['/competences']">competences</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Groupe de tags</a>
+            <a class="dropdown-item" [routerLink]="['/groupes-tags']">Groupe de tags</a>
             <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Profile de dorties</a>
+              <a class="dropdown-item" [routerLink]="['/profiles-sortie']">Profile de dorties</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" [routerLink]="['/users']">
             <img class="ml-2" src="./assets/img/icon/user.png" alt=""><br>
             <span>Users</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" [routerLink]="['/historiques-promos']">
             <img class="ml-5" src="./assets/img/icon/history.png" alt=""><br>
             <span>Historique des promos</span>
           </a>
