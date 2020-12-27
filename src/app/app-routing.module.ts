@@ -19,7 +19,6 @@ import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AddProfileComponent } from './profiles/add-profile/add-profile.component';
-import { AddPromoComponent } from './promos/add-promo/add-promo.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'/login', pathMatch:'full'},
@@ -31,12 +30,7 @@ const routes: Routes = [
       {path:'profile-user', component:DetailUserComponent},
     ]
   },
-  {path:'promos', component:PromosComponent,
-    children:
-    [
-      {path:'add-promo', component:AddPromoComponent}
-    ]
-  },
+  {path:'promos', component:PromosComponent},
   {path:'rendus', component:RendusComponent},
   {path:'briefs', component:BriefsComponent},
   {path:'forums', component:ForumsComponent},

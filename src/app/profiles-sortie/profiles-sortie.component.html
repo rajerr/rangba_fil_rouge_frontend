@@ -1,1 +1,53 @@
-<p>profiles-sortie works!</p>
+<div class="col-lg-7">
+    <h1 class="display-5 text-center">Liste Profiles de Sortie</h1>
+        <a [routerLink]="['/profiles/add-profile']">
+        <button type="submit" class="btn btn-primary float-right"><img src="./assets/img/icon/add.png" alt=""></button>
+        </a>
+    </div>
+
+    <table class="table table-bordered col-lg-7">
+        <thead>
+          <tr>
+            <th scope="col">Libelle</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Developpeur Back</td>
+            <td>
+                <a class="ml-4" href="">Editer</a>
+                <a class="ml-4" href="">Supprimer</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Developpeur front</td>
+            <td>
+                <a class="ml-4" href="">Editer</a>
+                <a class="ml-4" href="">Supprimer</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Developpeur Full stack</td>
+            <td>
+                <a class="ml-4" href="">Editer</a>
+                <a class="ml-4" href="">Supprimer</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Data Scientist</td>
+            <td>
+                <a class="ml-4" href="">Editer</a>
+                <a class="ml-4" href="">Supprimer</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Referent Digital</td>
+            <td>
+                <a class="ml-4" href="">Editer</a>
+                <a class="ml-4" href="">Supprimer</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<router-outlet></router-outlet>

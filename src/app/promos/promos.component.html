@@ -1,50 +1,83 @@
-<div class="col-lg">
-    <h1 class="display-5 text-center">Liste Promos</h1>
-        <a [routerLink]="['/promos/add-promo']">
-        <button type="submit" class="btn btn-primary float-right"><img src="./assets/img/icon/add.png" alt=""></button>
-        </a>
-    </div>
 
-    <table class="table table-bordered col-lg-7">
-        <thead>
-          <tr>
-            <th scope="col">Libelle</th>
-            <th scope="col">Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Administrateur</td>
-            <td>
-                <a class="ml-4" href="">Lister Admin</a>
-                <a class="ml-4" href="">Editer</a>
-                <a class="ml-4" href="">Supprimer</a>
-            </td>
-          </tr>
-          <tr>
-            <td>C. Manager</td>
-            <td>
-                <a class="ml-4" href="">Lister Cm</a>
-                <a class="ml-4" href="">Editer</a>
-                <a class="ml-4" href="">Supprimer</a>
-            </td>
-          </tr>
-          <tr>
-            <td>Formateur</td>
-            <td>
-                <a class="ml-4" href="">Lister Formateur</a>
-                <a class="ml-4" href="">Editer</a>
-                <a class="ml-4" href="">Supprimer</a>
-            </td>
-          </tr>
-          <tr>
-            <td>Apprenant</td>
-            <td>
-                <a class="ml-4" href="">Lister Apprenant</a>
-                <a class="ml-4" href="">Editer</a>
-                <a class="ml-4" href="">Supprimer</a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-<router-outlet></router-outlet>
+    <div class="jumbotron">
+        <h1 class="display-5 text-center text-light bg-primary">Créer une Promotion</h1>
+        <p class="lead text-danger"><img src="/src/assets/img/icon/" alt="">* Obligatoire.</p>
+        <hr class="my-4">
+        <form>
+            <fieldset>
+                <div class="form-group col-lg-4">
+                    <label for="exampleSelect1">Choix de la langue <i class="text-danger">*</i> </label>
+                    <select class="form-control bg-primary" id="exampleSelect1">
+                      <option>CHOIX DE LA LANGUE</option>
+                      <option>Français</option>
+                      <option>Anglais</option>
+                      <option>Sango</option>
+                      <option>Wolof</option>
+                    </select>
+                </div>
+              <div class="form-group">
+                <label for="InputTitre">Titre <i class="text-danger">*</i></label>
+                <input type="text" class="form-control " id="" aria-describedby="titre" 
+                        placeholder="choisir le titre le plus claire, le plus pro et le plus acchocheur possible">
+              </div>
+              <div class="form-group">
+                <label for="Textdescription">Description de la promo</label>
+                <textarea class="form-control" id="exampleTextarea" rows="3" 
+                          placeholder="Ecrivez une description rapide, simple et concise"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="InputLieu">Lieu de la promotion <i class="text-danger">*</i></label>
+                <input type="text" class="form-control" id="" aria-describedby="lieu" 
+                        placeholder="Indiquez la region dans laquelle se trouve votre promotion">
+              </div>
+              <div class="form-group">
+                <label for="InputReference">Reference Agate<i class="text-danger">*</i></label>
+                <input type="text" class="form-control" id="" aria-describedby="titre" 
+                        placeholder="Reference Agate est un code analytique à demander à votre Responsable si vous n'avez pas">
+              </div>
+              <div class="form-group col-lg-4">
+                <label for="exampleSelect1">Choix de la fabrique <i class="text-danger">*</i> </label>
+                <select class="form-control bg-primary" id="exampleSelect1">
+                  <option> CHOIS DE LA FABRIQUE</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="InputLieu">Date Début <i class="text-danger">*</i></label>
+                        <input type="date" class="form-control" id="" aria-describedby="dateDebut" 
+                        placeholder="Indiquez la region dans laquelle se trouve votre promotion">
+                    </div>
+                    <div class="col-lg-6">
+                        <label class="ml-2" for="InputLieu">Date Fin <i class="text-danger">*</i></label>
+                        <input type="date" class="form-control" id="" aria-describedby="dateDebut" 
+                                placeholder="Indiquez la region dans laquelle se trouve votre promotion">
+                    </div>
+                </div>
+                
+              </div>
+              <div class="form-group">
+                <label for="exampleSelect1">Referentiel <i class="text-danger">*</i></label>
+                <select class="form-control" id="exampleSelect1">
+                    <option></option>
+                    <option>Intégration Web</option>
+                </select>
+              </div>
+                <div class="form-group text-center border border-primary">
+                    <span >Fichiers acceptés: jpeg, png</span><br><br>
+                    <label for="exampleInputFile">Faites glisser une image ou</label><br><br>
+                    <label for="">
+                        <input type="file" class="form-control-file mx-auto d-block" id="exampleInputFile" aria-describedby="fileHelp">
+                    </label>
+                </div>
+              <div class="row">
+                  <div class="col-lg-6">
+                    <button type="submit" class="btn btn-primary"><img src="./assets/img/icon/return.png" alt=""> RETOUR</button>
+                  </div>
+                  <div class="col-lg-6">
+                    <button type="submit" class="btn btn-primary">CREER LA PROMOTION ET AJOUTER APPRENANT<img src="./assets/img/icon/suivant.png" alt=""> </button>
+                  </div>
+              </div>
+            </fieldset>
+        </form>
+      </div>
