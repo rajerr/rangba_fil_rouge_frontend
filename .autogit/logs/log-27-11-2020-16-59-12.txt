@@ -1,0 +1,24 @@
+-------------------- Auto-Git Log --------------------
+		Sun Dec 27 2020 16:59:12 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/app.component.html
+* src/app/app.module.ts
+* src/app/promos/promos.component.html
+* src/app/users/users.component.html
+* src/styles.css
+
+
+Created files:
+* .autogit/logs/log-27-11-2020-16-29-6.txt
+* src/app/users/add-user/add-user.component.css
+* src/app/users/add-user/add-user.component.html
+* src/app/users/add-user/add-user.component.spec.ts
+* src/app/users/add-user/add-user.component.ts
+
+
+Deleted files:
+
+
+Renamed files:

@@ -1,75 +1,55 @@
-<div class="jumbotron">
-    <h1 class="display-5 text-center text-light bg-primary">Ajouter un User</h1>
-    <p class="lead text-danger"><img src="/src/assets/img/icon/" alt="">* Obligatoire.</p>
-    <hr class="my-4">
-    <form>
-       <div class="row">
-           <div class="col-lg-9">
-            <fieldset>
-              <div class="form-group">
-                <label for="InputTitre">Nom <i class="text-danger">*</i></label>
-                <input type="text" class="form-control " id="" aria-describedby="titre" 
-                        placeholder="Entrez le nom">
-              </div>
-              <div class="form-group">
-                <label for="InputTitre">Prenom <i class="text-danger">*</i></label>
-                <input type="text" class="form-control " id="" aria-describedby="titre" 
-                        placeholder="Entrez le prenom">
-              </div>
-              <div class="form-group">
-                <label for="InputLieu">Adresse Mail <i class="text-danger">*</i></label>
-                <input type="text" class="form-control" id="" aria-describedby="lieu" 
-                        placeholder="Indiquez la region dans laquelle se trouve votre promotion">
-              </div>
-             
-              <div class="form-group col-lg-4">
-                <label for="exampleSelect1">Profil <i class="text-danger">*</i> </label>
-                <select class="form-control bg-primary" id="exampleSelect1">
-                  <option> CHOIS DE LA FABRIQUE</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <label for="InputLieu">Date Début <i class="text-danger">*</i></label>
-                        <input type="date" class="form-control" id="" aria-describedby="dateDebut" 
-                        placeholder="Indiquez la region dans laquelle se trouve votre promotion">
+<div class="col-lg-9">
+    <div class="jumbotron">
+        <h1 class="display-5 text-center text-light bg-primary">Ajouter un User</h1>
+        <p class="lead text-danger"><img src="/src/assets/img/icon/" alt="">* Obligatoire.</p>
+        <hr class="my-4">
+        <form>
+            <div class="row">
+                <div class="col-lg">
+                <fieldset>
+                    <div class="form-group">
+                    <label for="InputTitre">Nom <i class="text-danger">*</i></label>
+                    <input type="text" class="form-control " id="" aria-describedby="titre" 
+                            placeholder="Entrez le nom">
                     </div>
-                    <div class="col-lg-6">
-                        <label class="ml-2" for="InputLieu">Date Fin <i class="text-danger">*</i></label>
-                        <input type="date" class="form-control" id="" aria-describedby="dateDebut" 
-                                placeholder="Indiquez la region dans laquelle se trouve votre promotion">
+                    <div class="form-group">
+                    <label for="InputTitre">Prenom <i class="text-danger">*</i></label>
+                    <input type="text" class="form-control " id="" aria-describedby="titre" 
+                            placeholder="Entrez le prenom">
+                    </div>
+                    <div class="form-group">
+                    <label for="InputLieu">Adresse Mail <i class="text-danger">*</i></label>
+                    <input type="text" class="form-control" id="" aria-describedby="lieu" 
+                            placeholder="Indiquez la region dans laquelle se trouve votre promotion">
+                    </div>
+                    
+                    <div class="form-group col-lg-4">
+                    <label for="exampleSelect1">Profile <i class="text-danger">*</i> </label>
+                    <select class="form-control bg-primary" id="exampleSelect1">
+                        <option> selectionner un profile</option>
+                    </select>
+                    </div>
+                    <span >NB: Les profils à ajouter sont: Admin, Cm, Formateur</span><br><br>
+    
+                    <div class="row">
+                        <div class="col-lg-6">
+                        <button type="submit" class="btn btn-primary"><img src="./assets/img/icon/return.png" alt=""> RETOUR</button>
+                        </div>
+                        <div class="col-lg-6">
+                        <button type="submit" class="btn btn-primary">CREER LA PROMOTION ET AJOUTER APPRENANT<img src="./assets/img/icon/suivant.png" alt=""> </button>
+                        </div>
+                    </div>
+                </fieldset>
+                </div>
+                <div class="col-lg-3">
+                <div class="form-group">
+                    <img src="./assets/img/avatar.png" alt="">
+                    <input type="file" class="form-control " id="" aria-describedby="titre" placeholder="Entrez le prenom">
+                    <label for="InputTitre">Avatar</label>
+    
                     </div>
                 </div>
-                
-              </div>
-              <div class="form-group">
-                <label for="exampleSelect1">Referentiel <i class="text-danger">*</i></label>
-                <select class="form-control" id="exampleSelect1">
-                    <option></option>
-                    <option>Intégration Web</option>
-                </select>
-              </div>
-                <div class="form-group text-center border border-primary">
-                    <span >Fichiers acceptés: jpeg, png</span><br><br>
-                    <label for="exampleInputFile">Faites glisser une image ou</label><br><br>
-                    <label for="">
-                        <input type="file" class="form-control-file mx-auto d-block" id="exampleInputFile" aria-describedby="fileHelp">
-                    </label>
-                </div>
-              <div class="row">
-                  <div class="col-lg-6">
-                    <button type="submit" class="btn btn-primary"><img src="./assets/img/icon/return.png" alt=""> RETOUR</button>
-                  </div>
-                  <div class="col-lg-6">
-                    <button type="submit" class="btn btn-primary">CREER LA PROMOTION ET AJOUTER APPRENANT<img src="./assets/img/icon/suivant.png" alt=""> </button>
-                  </div>
-              </div>
-            </fieldset>
-           </div>
-           <div class="col-lg-3">
-
-           </div>
-       </div>
-    </form>
-  </div>
+            </div>
+        </form>
+    </div>
+</div>

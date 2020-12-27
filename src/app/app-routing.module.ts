@@ -1,3 +1,5 @@
+import { DetailUserComponent } from './users/detail-user/detail-user.component';
+import { AddUserComponent } from './users/add-user/add-user.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { ExplorersComponent } from './explorers/explorers.component';
 import { HistoriquePromosComponent } from './historique-promos/historique-promos.component';
@@ -20,8 +22,14 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {path:'', redirectTo:'/login', pathMatch:'full'},
   {path:'home', component: HomeComponent},
-  {path:'users', component:UsersComponent},
-  {path:'promos', component:PromosComponent},
+  {path:'users', component:UsersComponent,
+    children:[
+      {path:'add-user', component:AddUserComponent},
+      {path:':id', component:DetailUserComponent},
+      {path:'profile-user', component:DetailUserComponent},
+    ]
+  },
+  {path:'promos', component:AddUserComponent},
   {path:'rendus', component:RendusComponent},
   {path:'briefs', component:BriefsComponent},
   {path:'forums', component:ForumsComponent},
