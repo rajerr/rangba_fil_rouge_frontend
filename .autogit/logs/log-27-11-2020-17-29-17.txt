@@ -1,0 +1,20 @@
+-------------------- Auto-Git Log --------------------
+		Sun Dec 27 2020 17:29:17 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/app-routing.module.ts
+* src/app/users/add-user/add-user.component.html
+* src/app/users/users.component.html
+
+
+Created files:
+* .autogit/logs/log-27-11-2020-16-59-12.txt
+* src/assets/img/avatar.png
+* src/assets/img/icon/add-user.png
+
+
+Deleted files:
+
+
+Renamed files:
