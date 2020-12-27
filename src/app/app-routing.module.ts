@@ -20,6 +20,7 @@ import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AddProfileComponent } from './profiles/add-profile/add-profile.component';
+import { AddGroupeCompetenceComponent } from './groupe-competences/add-groupe-competence/add-groupe-competence.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'/login', pathMatch:'full'},
@@ -49,7 +50,12 @@ const routes: Routes = [
   {path:'notifications', component:NotificationsComponent},
   {path:'profiles-sortie', component:ProfilesSortieComponent},
   {path:'history-promos', component:HistoriquePromosComponent},
-  {path:'goupes-competences', component:GroupeCompetencesComponent},
+  {path:'goupes-competences', component:GroupeCompetencesComponent,
+    children:
+    [
+      {path:"add-groupe-competences", component:AddGroupeCompetenceComponent}
+    ]
+  },
 
 
   {path:'page-not-found', component:FoundComponent},
