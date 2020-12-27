@@ -1,0 +1,26 @@
+-------------------- Auto-Git Log --------------------
+		Sun Dec 27 2020 19:43:40 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/app-routing.module.ts
+* src/app/app.module.ts
+* src/app/profiles/profiles.component.html
+
+
+Created files:
+* .autogit/logs/log-27-11-2020-19-13-34.txt
+* src/app/profiles/add-profile/add-profile.component.css
+* src/app/profiles/add-profile/add-profile.component.html
+* src/app/profiles/add-profile/add-profile.component.spec.ts
+* src/app/profiles/add-profile/add-profile.component.ts
+* src/app/promos/add-promo/add-promo.component.css
+* src/app/promos/add-promo/add-promo.component.html
+* src/app/promos/add-promo/add-promo.component.spec.ts
+* src/app/promos/add-promo/add-promo.component.ts
+
+
+Deleted files:
+
+
+Renamed files:
