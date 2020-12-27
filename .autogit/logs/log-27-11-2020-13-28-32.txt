@@ -1,0 +1,67 @@
+-------------------- Auto-Git Log --------------------
+		Sun Dec 27 2020 13:28:32 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/app.component.html
+* src/app/app.module.ts
+* src/app/header/header.component.css
+* src/app/home/home.component.html
+
+
+Created files:
+* .autogit/logs/log-27-11-2020-12-58-26.txt
+* src/app/briefs/briefs.component.css
+* src/app/briefs/briefs.component.html
+* src/app/briefs/briefs.component.spec.ts
+* src/app/briefs/briefs.component.ts
+* src/app/competences/competences.component.css
+* src/app/competences/competences.component.html
+* src/app/competences/competences.component.spec.ts
+* src/app/competences/competences.component.ts
+* src/app/explorers/explorers.component.css
+* src/app/explorers/explorers.component.html
+* src/app/explorers/explorers.component.spec.ts
+* src/app/explorers/explorers.component.ts
+* src/app/forums/forums.component.css
+* src/app/forums/forums.component.html
+* src/app/forums/forums.component.spec.ts
+* src/app/forums/forums.component.ts
+* src/app/groupe-competences/groupe-competences.component.css
+* src/app/groupe-competences/groupe-competences.component.html
+* src/app/groupe-competences/groupe-competences.component.spec.ts
+* src/app/groupe-competences/groupe-competences.component.ts
+* src/app/groupe-tags/groupe-tags.component.css
+* src/app/groupe-tags/groupe-tags.component.html
+* src/app/groupe-tags/groupe-tags.component.spec.ts
+* src/app/groupe-tags/groupe-tags.component.ts
+* src/app/profiles-sortie/profiles-sortie.component.css
+* src/app/profiles-sortie/profiles-sortie.component.html
+* src/app/profiles-sortie/profiles-sortie.component.spec.ts
+* src/app/profiles-sortie/profiles-sortie.component.ts
+* src/app/profiles/profiles.component.css
+* src/app/profiles/profiles.component.html
+* src/app/profiles/profiles.component.spec.ts
+* src/app/profiles/profiles.component.ts
+* src/app/promos/promos.component.css
+* src/app/promos/promos.component.html
+* src/app/promos/promos.component.spec.ts
+* src/app/promos/promos.component.ts
+* src/app/referentiels/referentiels.component.css
+* src/app/referentiels/referentiels.component.html
+* src/app/referentiels/referentiels.component.spec.ts
+* src/app/referentiels/referentiels.component.ts
+* src/app/rendus/rendus.component.css
+* src/app/rendus/rendus.component.html
+* src/app/rendus/rendus.component.spec.ts
+* src/app/rendus/rendus.component.ts
+* src/app/users/users.component.css
+* src/app/users/users.component.html
+* src/app/users/users.component.spec.ts
+* src/app/users/users.component.ts
+
+
+Deleted files:
+
+
+Renamed files:
