@@ -1,3 +1,4 @@
+import { EditerUserComponent } from './users/editer-user/editer-user.component';
 import { DetailUserComponent } from './users/detail-user/detail-user.component';
 import { AddUserComponent } from './users/add-user/add-user.component';
 import { NotificationsComponent } from './notifications/notifications.component';
@@ -27,6 +28,7 @@ const routes: Routes = [
     children:[
       {path:'add-user', component:AddUserComponent},
       {path:':id', component:DetailUserComponent},
+      {path:':/editer', component:EditerUserComponent},
       {path:'profile-user', component:DetailUserComponent},
     ]
   },

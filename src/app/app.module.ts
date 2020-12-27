@@ -28,6 +28,7 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import { ProfileUserComponent } from './users/profile-user/profile-user.component';
 import { AddUserComponent } from './users/add-user/add-user.component';
 import { AddProfileComponent } from './profiles/add-profile/add-profile.component';
+import { EditerUserComponent } from './users/editer-user/editer-user.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { AddProfileComponent } from './profiles/add-profile/add-profile.componen
     ProfileUserComponent,
     AddUserComponent,
     AddProfileComponent,
+    EditerUserComponent,
   ],
   imports: [
     BrowserModule,
