@@ -1,4 +1,4 @@
-<div class="container ">
+
     <div class="jumbotron">
         <h1 class="display-5 text-center">Créer une Promotion</h1>
         <p class="lead text-danger"><img src="/src/assets/img/icon/" alt="">* Obligatoire.</p>
@@ -66,8 +66,21 @@
                     <option>5</option>
                 </select>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="form-group text-center border border-primary">
+                    <span >Fichiers acceptés: jpeg, png</span><br><br>
+                    <label for="exampleInputFile">Faites glisser une image ou</label>
+                    <label for="">
+                        <input type="file" class="form-control-file mx-auto d-block" id="exampleInputFile" aria-describedby="fileHelp">
+                    </label>
+                </div>
+              <div class="row">
+                  <div class="col-lg-6">
+                    <button type="submit" class="btn btn-primary"><img src="./assets/img/icon/return.png" alt=""> RETOUR</button>
+                  </div>
+                  <div class="col-lg-6">
+                    <button type="submit" class="btn btn-primary">CREER LA PROMOTION ET AJOUTER APPRENANT<img src="./assets/img/icon/suivant.png" alt=""> </button>
+                  </div>
+              </div>
             </fieldset>
         </form>
       </div>
-</div>

@@ -25,6 +25,7 @@ import { FormsModule } from '@angular/forms';
 import { HistoriquePromosComponent } from './historique-promos/historique-promos.component';
 import { DetailUserComponent } from './users/detail-user/detail-user.component';
 import { NotificationsComponent } from './notifications/notifications.component';
+import { ProfileUserComponent } from './users/profile-user/profile-user.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { NotificationsComponent } from './notifications/notifications.component'
     ProfilesSortieComponent,
     HistoriquePromosComponent,
     DetailUserComponent,
-    NotificationsComponent
+    NotificationsComponent,
+    ProfileUserComponent
   ],
   imports: [
     BrowserModule,

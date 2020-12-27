@@ -1,0 +1,29 @@
+-------------------- Auto-Git Log --------------------
+		Sun Dec 27 2020 15:59:00 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* angular.json
+* package-lock.json
+* package.json
+* src/app/app-routing.module.ts
+* src/app/app.module.ts
+* src/app/header/header.component.html
+
+
+Created files:
+* .autogit/logs/log-27-11-2020-15-28-54.txt
+* src/app/notifications/notifications.component.css
+* src/app/notifications/notifications.component.html
+* src/app/notifications/notifications.component.spec.ts
+* src/app/notifications/notifications.component.ts
+* src/app/users/detail-user/detail-user.component.css
+* src/app/users/detail-user/detail-user.component.html
+* src/app/users/detail-user/detail-user.component.spec.ts
+* src/app/users/detail-user/detail-user.component.ts
+
+
+Deleted files:
+
+
+Renamed files:
