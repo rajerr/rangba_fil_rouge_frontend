@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Sun Dec 27 2020 14:28:43 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/promos/promos.component.html
+* src/styles.css
+
+
+Created files:
+* .autogit/logs/log-27-11-2020-13-58-38.txt
+* src/assets/img/back.jpg
+
+
+Deleted files:
+
+
+Renamed files:
