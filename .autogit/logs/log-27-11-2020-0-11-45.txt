@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Sun Dec 27 2020 00:11:45 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/login/login.component.html
+* src/assets/img/c3.png
+
+
+Created files:
+* .autogit/logs/log-26-11-2020-23-41-39.txt
+
+
+Deleted files:
+
+
+Renamed files:
