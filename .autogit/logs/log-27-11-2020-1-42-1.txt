@@ -1,0 +1,21 @@
+-------------------- Auto-Git Log --------------------
+		Sun Dec 27 2020 01:42:01 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/header/header.component.css
+* src/app/header/header.component.html
+* src/app/home/home.component.html
+* src/assets/img/icon/home.png
+* src/assets/img/icon/notif.png
+
+
+Created files:
+* .autogit/logs/log-27-11-2020-1-11-56.txt
+* src/assets/img/icon/profile.png
+
+
+Deleted files:
+
+
+Renamed files:
