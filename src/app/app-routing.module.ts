@@ -50,7 +50,7 @@ const routes: Routes = [
   {path:'notifications', component:NotificationsComponent},
   {path:'profiles-sortie', component:ProfilesSortieComponent},
   {path:'history-promos', component:HistoriquePromosComponent},
-  {path:'goupes-competences', component:GroupeCompetencesComponent,
+  {path:'groupes-competences', component:GroupeCompetencesComponent,
     children:
     [
       {path:"add-groupe-competences", component:AddGroupeCompetenceComponent}

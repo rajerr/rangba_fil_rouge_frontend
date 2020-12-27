@@ -30,6 +30,7 @@ import { AddUserComponent } from './users/add-user/add-user.component';
 import { AddProfileComponent } from './profiles/add-profile/add-profile.component';
 import { EditerUserComponent } from './users/editer-user/editer-user.component';
 import { AddGroupeCompetenceComponent } from './groupe-competences/add-groupe-competence/add-groupe-competence.component';
+import { AddCompetenceComponent } from './competences/add-competence/add-competence.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { AddGroupeCompetenceComponent } from './groupe-competences/add-groupe-co
     AddProfileComponent,
     EditerUserComponent,
     AddGroupeCompetenceComponent,
+    AddCompetenceComponent,
   ],
   imports: [
     BrowserModule,
