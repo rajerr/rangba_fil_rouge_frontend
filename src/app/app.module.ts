@@ -26,6 +26,7 @@ import { HistoriquePromosComponent } from './historique-promos/historique-promos
 import { DetailUserComponent } from './users/detail-user/detail-user.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { ProfileUserComponent } from './users/profile-user/profile-user.component';
+import { AddUserComponent } from './users/add-user/add-user.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { ProfileUserComponent } from './users/profile-user/profile-user.componen
     HistoriquePromosComponent,
     DetailUserComponent,
     NotificationsComponent,
-    ProfileUserComponent
+    ProfileUserComponent,
+    AddUserComponent
   ],
   imports: [
     BrowserModule,
