@@ -23,6 +23,8 @@ import { GroupeTagsComponent } from './groupe-tags/groupe-tags.component';
 import { ProfilesSortieComponent } from './profiles-sortie/profiles-sortie.component';
 import { FormsModule } from '@angular/forms';
 import { HistoriquePromosComponent } from './historique-promos/historique-promos.component';
+import { DetailUserComponent } from './users/detail-user/detail-user.component';
+import { NotificationsComponent } from './notifications/notifications.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { HistoriquePromosComponent } from './historique-promos/historique-promos
     GroupeCompetencesComponent,
     GroupeTagsComponent,
     ProfilesSortieComponent,
-    HistoriquePromosComponent
+    HistoriquePromosComponent,
+    DetailUserComponent,
+    NotificationsComponent
   ],
   imports: [
     BrowserModule,

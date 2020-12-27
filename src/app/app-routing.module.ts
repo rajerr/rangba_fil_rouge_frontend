@@ -1,3 +1,6 @@
+import { NotificationsComponent } from './notifications/notifications.component';
+import { ExplorersComponent } from './explorers/explorers.component';
+import { HistoriquePromosComponent } from './historique-promos/historique-promos.component';
 import { UsersComponent } from './users/users.component';
 import { RendusComponent } from './rendus/rendus.component';
 import { ReferentielsComponent } from './referentiels/referentiels.component';
@@ -23,10 +26,13 @@ const routes: Routes = [
   {path:'briefs', component:BriefsComponent},
   {path:'forums', component:ForumsComponent},
   {path:'profiles', component:ProfilesComponent},
+  {path:'explorers', component:ExplorersComponent},
   {path:'competences', component:CompetencesComponent},
   {path:'groupes-tags', component:GroupeTagsComponent},
   {path:'referentiels', component:ReferentielsComponent},
+  {path:'notifications', component:NotificationsComponent},
   {path:'profiles-sortie', component:ProfilesSortieComponent},
+  {path:'history-promos', component:HistoriquePromosComponent},
   {path:'goupes-competences', component:GroupeCompetencesComponent},
 
 
