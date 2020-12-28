@@ -1,3 +1,4 @@
+import { ProfileUserComponent } from './users/profile-user/profile-user.component';
 import { EditerUserComponent } from './users/editer-user/editer-user.component';
 import { DetailUserComponent } from './users/detail-user/detail-user.component';
 import { AddUserComponent } from './users/add-user/add-user.component';
@@ -34,9 +35,9 @@ const routes: Routes = [
         {path:'add-user', component:AddUserComponent},
         {path:':id', component:DetailUserComponent},
         {path:':/editer', component:EditerUserComponent},
-        {path:'profile-user', component:DetailUserComponent},
       ]
     },
+    {path:'profile-user', component:ProfileUserComponent},
     {path:'promos', component:PromosComponent},
     {path:'rendus', component:RendusComponent},
     {path:'briefs', component:BriefsComponent},
