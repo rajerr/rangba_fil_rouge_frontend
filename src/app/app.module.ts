@@ -33,6 +33,11 @@ import { AddGroupeCompetenceComponent } from './groupe-competences/add-groupe-co
 import { AddCompetenceComponent } from './competences/add-competence/add-competence.component';
 import { DetailCompetenceComponent } from './competences/detail-competence/detail-competence.component';
 import { AddReferentielComponent } from './referentiels/add-referentiel/add-referentiel.component';
+import { ApprenantsComponent } from './apprenants/apprenants.component';
+import { AdminsComponent } from './admins/admins.component';
+import { CmsComponent } from './cms/cms.component';
+import { FormateursComponent } from './formateurs/formateurs.component';
+import { AddApprenantComponent } from './apprenants/add-apprenant/add-apprenant.component';
 
 @NgModule({
   declarations: [
@@ -65,6 +70,11 @@ import { AddReferentielComponent } from './referentiels/add-referentiel/add-refe
     AddCompetenceComponent,
     DetailCompetenceComponent,
     AddReferentielComponent,
+    ApprenantsComponent,
+    AdminsComponent,
+    CmsComponent,
+    FormateursComponent,
+    AddApprenantComponent,
   ],
   imports: [
     BrowserModule,
