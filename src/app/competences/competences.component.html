@@ -1,12 +1,12 @@
 <div class="border border-primary mt-3">
     <h1 class="display-5 text-center">Lister  les Competence</h1>
     <div class="col-lg">
-        <a [routerLink]="['/competences/add-competences']">
+        <a [routerLink]="['/competences/add-competence']">
             <button type="submit" class="btn btn-primary float-right"><img src="./assets/img/icon/add.png" alt=""></button>
         </a>
     </div>
     <div class="row mt-5">
-        <div class="col-lg-6 border border-info mb-2 ml-2 mr-2">
+        <div class="col-lg-6 border border-info mb-2">
             <form action="">
             <div class="form-group col-lg">
                 <select class="form-control " id="exampleSelect1">
@@ -25,30 +25,21 @@
             <div class="form-group col-lg">
                 <a href="">Realiser une interface web dynamique</a>
             </div>
+            <div class="form-group col-lg">
+                <a href="">Realiser une interface web dynamique</a>
+            </div>
             </form>
         </div>
-        <div class="row border border-primary">
-            <table class="table table-bordered">
-                <thead>
-                  <tr>
-                    <th scope="col"><a href="">Niveau 1</a></th>
-                    <th scope="col"><a href="">Niveau 2</a></th>
-                    <th scope="col"><a href="">Niveau 3</a></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Groupe d'action à realiser</td>
-                    <td>
-                        <div class="col">
-                            <label for="">Critère d'évaluation</label>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, illum?
-                        </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-
+        <div class="col-lg-6 border border-info">
+           <span class="col-lg-6">
+            <a class="col-lg-3" href="">Niveau 1</a>
+            <a class="col-lg-3" href="">Niveau 2</a>
+            <a class="col-lg-3" href="">Niveau 3</a>
+           </span><hr>
+           <span class="col-lg-3">
+            <a class="col-lg" href="">Groupe d'action</a>
+            <a class="col-lg" href="">Critère d'évaluation</a>
+           </span>
         </div>
     </div>
 </div> 
