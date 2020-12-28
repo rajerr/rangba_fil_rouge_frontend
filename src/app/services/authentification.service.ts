@@ -1,3 +1,5 @@
+import { environment } from './../../environments/environment.prod';
+import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
@@ -6,14 +8,13 @@ import { Injectable } from '@angular/core';
 })
 export class AuthentificationService {
 
-  helper = new JwtHelperService();
   constructor(private http: HttpClient) { }
 
   login(data: any) {
     return this.http.post(`${environment.url}/login_check`, data);
   }
 
-  allUsers(): Observable<any> {
+  allUsers(): Observable <any> {
     return this.http.get(`${environment.url}/admin/users`);
   }
 
