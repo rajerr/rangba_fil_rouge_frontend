@@ -1,0 +1,20 @@
+-------------------- Auto-Git Log --------------------
+		Mon Dec 28 2020 08:45:43 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* angular.json
+* src/app/groupe-competences/add-groupe-competence/add-groupe-competence.component.html
+* src/app/header/header.component.html
+* src/app/referentiels/referentiels.component.html
+* src/app/users/users.component.html
+
+
+Created files:
+* .autogit/logs/log-28-11-2020-8-15-37.txt
+
+
+Deleted files:
+
+
+Renamed files:
