@@ -1,0 +1,23 @@
+-------------------- Auto-Git Log --------------------
+		Mon Dec 28 2020 10:46:06 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/app-routing.module.ts
+* src/app/competences/competences.component.html
+* src/app/groupe-competences/groupe-competences.component.html
+* src/app/profiles-sortie/profiles-sortie.component.html
+* src/app/profiles/profiles.component.html
+* src/app/referentiels/referentiels.component.html
+* src/app/users/profile-user/profile-user.component.html
+* src/app/users/users.component.html
+
+
+Created files:
+* .autogit/logs/log-28-11-2020-10-16-0.txt
+
+
+Deleted files:
+
+
+Renamed files:

@@ -83,11 +83,14 @@
               <span>Profile</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" [routerLink]="['home/notifications']">
-              <img class="ml-4" src="./assets/img/icon/notif.png" alt=""><br>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <img class="ml-4" src="./assets/img/icon/user.png" alt=""><br>
               <span>Notification</span>
             </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item border border-light text-light bg-primary" [routerLink]="['home/users']">Message</a>
+            </div>
           </li>
         </ul>
     </div>
