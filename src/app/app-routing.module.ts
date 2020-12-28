@@ -23,6 +23,7 @@ import { AddProfileComponent } from './profiles/add-profile/add-profile.componen
 import { AddGroupeCompetenceComponent } from './groupe-competences/add-groupe-competence/add-groupe-competence.component';
 import { AddCompetenceComponent } from './competences/add-competence/add-competence.component';
 import { DetailCompetenceComponent } from './competences/detail-competence/detail-competence.component';
+import { AddReferentielComponent } from './referentiels/add-referentiel/add-referentiel.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'/login', pathMatch:'full'},
@@ -54,7 +55,12 @@ const routes: Routes = [
     ]
   },
   {path:'groupes-tags', component:GroupeTagsComponent},
-  {path:'referentiels', component:ReferentielsComponent},
+  {path:'referentiels', component:ReferentielsComponent,
+    children:
+    [
+      {path:'add-referentiel', component:AddReferentielComponent},
+    ]
+  },
   {path:'notifications', component:NotificationsComponent},
   {path:'profiles-sortie', component:ProfilesSortieComponent},
   {path:'history-promos', component:HistoriquePromosComponent},

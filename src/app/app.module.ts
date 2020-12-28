@@ -32,6 +32,7 @@ import { EditerUserComponent } from './users/editer-user/editer-user.component';
 import { AddGroupeCompetenceComponent } from './groupe-competences/add-groupe-competence/add-groupe-competence.component';
 import { AddCompetenceComponent } from './competences/add-competence/add-competence.component';
 import { DetailCompetenceComponent } from './competences/detail-competence/detail-competence.component';
+import { AddReferentielComponent } from './referentiels/add-referentiel/add-referentiel.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +64,7 @@ import { DetailCompetenceComponent } from './competences/detail-competence/detai
     AddGroupeCompetenceComponent,
     AddCompetenceComponent,
     DetailCompetenceComponent,
+    AddReferentielComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,24 @@
-<p>referentiels works!</p>
+<div class="border border-primary mt-3">
+    <h1 class="display-5 text-center">Lister Reférentiels</h1>
+    <div class="col-lg">
+        <a [routerLink]="['/groupes-competences/add-groupe-competences']">
+            <button type="submit" class="btn btn-primary float-right"><img src="./assets/img/icon/add-user.png" alt=""></button>
+        </a>
+    </div>
+    <div class="row mt-5">
+        <div class="col-lg-3">
+            <div class="card border-primary mb-3" style="max-width: 20rem;">
+                <div class="card-header">Libelle</div>
+                <div class="card-body">
+                  <p class="card-text">Présentation</p>
+                <div class="card-footer">Groupe Competences</div>
+                <div class="card-footer">Programme</div>
+                <div class="card-footer">Critère d'évaluation</div>
+                <div class="card-footer">Critère d'admission</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<router-outlet></router-outlet>
