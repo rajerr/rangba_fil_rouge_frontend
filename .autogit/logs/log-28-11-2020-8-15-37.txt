@@ -1,0 +1,21 @@
+-------------------- Auto-Git Log --------------------
+		Mon Dec 28 2020 08:15:37 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/groupe-competences/groupe-competences.component.html
+* src/app/referentiels/add-referentiel/add-referentiel.component.html
+* src/app/referentiels/referentiels.component.html
+
+
+Created files:
+* .autogit/logs/log-28-11-2020-1-30-33.txt
+* src/assets/img/icon/close.png
+* src/assets/img/icon/delete.png
+* src/assets/img/icon/upd.png
+
+
+Deleted files:
+
+
+Renamed files:
