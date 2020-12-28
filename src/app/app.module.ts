@@ -38,6 +38,10 @@ import { AdminsComponent } from './admins/admins.component';
 import { CmsComponent } from './cms/cms.component';
 import { FormateursComponent } from './formateurs/formateurs.component';
 import { AddApprenantComponent } from './apprenants/add-apprenant/add-apprenant.component';
+import { ListApprenantComponent } from './apprenants/list-apprenant/list-apprenant.component';
+import { ListFormateurComponent } from './formateurs/list-formateur/list-formateur.component';
+import { ListCmComponent } from './cms/list-cm/list-cm.component';
+import { ListAdminComponent } from './admins/list-admin/list-admin.component';
 
 @NgModule({
   declarations: [
@@ -75,6 +79,10 @@ import { AddApprenantComponent } from './apprenants/add-apprenant/add-apprenant.
     CmsComponent,
     FormateursComponent,
     AddApprenantComponent,
+    ListApprenantComponent,
+    ListFormateurComponent,
+    ListCmComponent,
+    ListAdminComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,36 +1,46 @@
-<router-outlet></router-outlet>
 <div class="row mt-5">
-    <h1 class="display-5 text-center">Liste Apprenants</h1>
-    <div class="col-lg-6">
-        <h4 class="display-5 text-center text-light bg-primary">Ajouter un User</h4>
+    <h1 class="text-center">Liste Apprenants</h1>
+    <div class="col-lg-5">
+        <h4 class="display-5 text-center text-light bg-primary">Ajouter Apprenants</h4>
         <p class="lead text-danger"><img src="/src/assets/img/icon/" alt="">* Obligatoire.</p>
         <span>Format:nom@domain.com</span>
         <hr class="my-4">
         <form>
-                <fieldset>
-                    <div class="form-group">
-                    <label for="InputLieu">Adresse Mail <i class="text-danger">*</i></label>
-                    <input type="text" class="form-control" id="" aria-describedby="lieu" 
-                            placeholder="Indiquez la region dans laquelle se trouve votre promotion">
+            <fieldset>
+                <div class="form-group">
+                <label for="InputLieu">Adresse Mail <i class="text-danger">*</i></label><br>
+                    <textarea name="mail" id="" cols="50" rows="10" placeholder="ajouter l'ensemble des mail" ></textarea>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                    <button type="submit" class="btn btn-primary">Ajouter</button>
                     </div>
-                    
-                    <div class="form-group col-lg">
-                    <label for="exampleSelect1">Profile <i class="text-danger">*</i> </label>
-                    <select class="form-control " id="exampleSelect1">
-                        <option> selectionner un profile</option>
-                    </select>
-                    </div>
-                    <span >NB: Les profils à ajouter sont: Admin, Cm, Formateur</span><br><br>
-    
-                    <div class="row">
-                        <div class="col-lg-6">
-                        <button type="submit" class="btn btn-primary">Ajouter</button>
-                        </div>
-                    </div>
-                </fieldset>
+                </div>
+            </fieldset>
         </form>
     </div>
-    <div class="col-lg-6">
-        
+    <div class="col-lg-5">
+        <div class="row float-right">
+            <a [routerLink]="['/home/users/add-user']">
+                <button type="submit" class="btn btn-primary float-right">Chargers un fichier cvs</button>
+            </a>
+        </div>
+        <h1 class="display-5 text-center">Liste Apprenants</h1>
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Email</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>rajerr2013@gmail.com</td>
+            <td>
+                <a class="ml-4" [routerLink]="['/users/1']">relancer l'invitation</a>
+            </td>  
+          </tr>
+        </tbody>
+      </table>
     </div>
 </div>

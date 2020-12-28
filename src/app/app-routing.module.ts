@@ -1,3 +1,4 @@
+import { ListApprenantComponent } from './apprenants/list-apprenant/list-apprenant.component';
 import { FormateursComponent } from './formateurs/formateurs.component';
 import { CmsComponent } from './cms/cms.component';
 import { AdminsComponent } from './admins/admins.component';
@@ -46,13 +47,17 @@ const routes: Routes = [
     {path:'rendus', component:RendusComponent},
     {path:'briefs', component:BriefsComponent},
     {path:'forums', component:ForumsComponent},
+    {path:'cms', component:CmsComponent},
+    {path:'admins', component:AdminsComponent},
+    {path:'formateur', component:FormateursComponent},
+    {path:'apprenants', component:ApprenantsComponent},
     {path:'profiles', component:ProfilesComponent,
       children:
       [
-        {path:'cms', component:CmsComponent},
-        {path:'admins', component:AdminsComponent},
-        {path:'formateur', component:FormateursComponent},
-        {path:'apprenants', component:ApprenantsComponent},
+        {path:'list-cms', component:CmsComponent},
+        {path:'list-admins', component:AdminsComponent},
+        {path:'list-formateurs', component:FormateursComponent},
+        {path:'list-apprenants', component:ListApprenantComponent},
         {path:'add-profile', component:AddProfileComponent},
       ]
     },

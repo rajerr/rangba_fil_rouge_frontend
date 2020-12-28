@@ -1,11 +1,11 @@
-    <div class="col-lg-7 mt-5">
+<div class="row">
+  <div class="col-lg-6 mt-5">
     <h1 class="display-5 text-center">Liste Profiles</h1>
         <a [routerLink]="['/home/profiles/add-profile']">
-        <button type="submit" class="btn btn-primary float-right"><img src="./assets/img/icon/add-user.png" alt=""></button>
+          <button type="submit" class="btn btn-primary float-right"><img src="./assets/img/icon/add-user.png" alt=""></button>
         </a>
     </div>
-
-    <table class="table table-bordered col-lg-7">
+    <table class="table table-bordered">
         <thead>
           <tr>
             <th scope="col">Libelle</th>
@@ -16,7 +16,7 @@
           <tr>
             <td>Administrateur</td>
             <td>
-                <a class="ml-4" href="">Lister Admin</a>
+                <a class="ml-4" [routerLink]="['/home/profiles/list-admins']">Lister Admin</a>
                 <a class="ml-4" href="">Editer</a>
                 <a class="ml-4" href="">Supprimer</a>
             </td>
@@ -24,7 +24,7 @@
           <tr>
             <td>C. Manager</td>
             <td>
-                <a class="ml-4" href="">Lister Cm</a>
+                <a class="ml-4" [routerLink]="['/home/profiles/list-cms']">Lister Cm</a>
                 <a class="ml-4" href="">Editer</a>
                 <a class="ml-4" href="">Supprimer</a>
             </td>
@@ -32,7 +32,7 @@
           <tr>
             <td>Formateur</td>
             <td>
-                <a class="ml-4" href="">Lister Formateur</a>
+                <a class="ml-4" [routerLink]="['/home/profiles/list-formateurs']">Lister Formateur</a>
                 <a class="ml-4" href="">Editer</a>
                 <a class="ml-4" href="">Supprimer</a>
             </td>
@@ -40,13 +40,14 @@
           <tr>
             <td>Apprenant</td>
             <td>
-                <a class="ml-4" href="">Lister Apprenant</a>
+                <a class="ml-4" [routerLink]="['/home/profiles/list-apprenants']">Lister Apprenant</a>
                 <a class="ml-4" href="">Editer</a>
                 <a class="ml-4" href="">Supprimer</a>
             </td>
           </tr>
         </tbody>
       </table>
-      <div class="col">
+      <div class="col-lg-5">
         <router-outlet></router-outlet>
       </div>
+</div>
