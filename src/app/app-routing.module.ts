@@ -1,3 +1,7 @@
+import { FormateursComponent } from './formateurs/formateurs.component';
+import { CmsComponent } from './cms/cms.component';
+import { AdminsComponent } from './admins/admins.component';
+import { ApprenantsComponent } from './apprenants/apprenants.component';
 import { ProfileUserComponent } from './users/profile-user/profile-user.component';
 import { EditerUserComponent } from './users/editer-user/editer-user.component';
 import { DetailUserComponent } from './users/detail-user/detail-user.component';
@@ -45,6 +49,10 @@ const routes: Routes = [
     {path:'profiles', component:ProfilesComponent,
       children:
       [
+        {path:'cms', component:CmsComponent},
+        {path:'admins', component:AdminsComponent},
+        {path:'formateur', component:FormateursComponent},
+        {path:'apprenants', component:ApprenantsComponent},
         {path:'add-profile', component:AddProfileComponent},
       ]
     },
