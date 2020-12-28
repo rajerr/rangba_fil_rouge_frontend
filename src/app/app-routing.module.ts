@@ -21,6 +21,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AddProfileComponent } from './profiles/add-profile/add-profile.component';
 import { AddGroupeCompetenceComponent } from './groupe-competences/add-groupe-competence/add-groupe-competence.component';
+import { AddCompetenceComponent } from './competences/add-competence/add-competence.component';
+import { DetailCompetenceComponent } from './competences/detail-competence/detail-competence.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'/login', pathMatch:'full'},
@@ -44,7 +46,13 @@ const routes: Routes = [
     ]
   },
   {path:'explorers', component:ExplorersComponent},
-  {path:'competences', component:CompetencesComponent},
+  {path:'competences', component:CompetencesComponent,
+    children:
+    [
+      {path:'add-competence', component: AddCompetenceComponent},
+      {path:':id', component: DetailCompetenceComponent},
+    ]
+  },
   {path:'groupes-tags', component:GroupeTagsComponent},
   {path:'referentiels', component:ReferentielsComponent},
   {path:'notifications', component:NotificationsComponent},
@@ -53,7 +61,7 @@ const routes: Routes = [
   {path:'groupes-competences', component:GroupeCompetencesComponent,
     children:
     [
-      {path:"add-groupe-competences", component:AddGroupeCompetenceComponent}
+      {path:"add-groupe-competences", component:AddGroupeCompetenceComponent},
     ]
   },
 

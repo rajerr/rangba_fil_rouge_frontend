@@ -1,1 +1,22 @@
-<p>competences works!</p>
+<div class="border border-primary mt-3">
+    <h1 class="display-5 text-center">Lister  les Competence</h1>
+    <div class="col-lg">
+        <a [routerLink]="['/competences/add-competences']">
+            <button type="submit" class="btn btn-primary float-right"><img src="./assets/img/icon/add-user.png" alt=""></button>
+        </a>
+    </div>
+    <div class="row mt-5">
+        <div class="col-lg-6">
+            <div class="form-group col-lg">
+                <select class="form-control " id="exampleSelect1">
+                    <option> Developper le front d'une application</option>
+                </select>
+            </div>
+            <div class="form-group col-lg">
+                 <a href="">Maquetter une application</a>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<router-outlet></router-outlet>
