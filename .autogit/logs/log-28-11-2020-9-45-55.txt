@@ -1,0 +1,39 @@
+-------------------- Auto-Git Log --------------------
+		Mon Dec 28 2020 09:45:55 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/app.module.ts
+* src/app/home/home.component.html
+* src/app/promos/promos.component.html
+* src/index.html
+
+
+Created files:
+* .autogit/logs/log-28-11-2020-9-15-50.txt
+* src/app/admins/admins.component.css
+* src/app/admins/admins.component.html
+* src/app/admins/admins.component.spec.ts
+* src/app/admins/admins.component.ts
+* src/app/apprenants/add-apprenant/add-apprenant.component.css
+* src/app/apprenants/add-apprenant/add-apprenant.component.html
+* src/app/apprenants/add-apprenant/add-apprenant.component.spec.ts
+* src/app/apprenants/add-apprenant/add-apprenant.component.ts
+* src/app/apprenants/apprenants.component.css
+* src/app/apprenants/apprenants.component.html
+* src/app/apprenants/apprenants.component.spec.ts
+* src/app/apprenants/apprenants.component.ts
+* src/app/cms/cms.component.css
+* src/app/cms/cms.component.html
+* src/app/cms/cms.component.spec.ts
+* src/app/cms/cms.component.ts
+* src/app/formateurs/formateurs.component.css
+* src/app/formateurs/formateurs.component.html
+* src/app/formateurs/formateurs.component.spec.ts
+* src/app/formateurs/formateurs.component.ts
+
+
+Deleted files:
+
+
+Renamed files:

@@ -27,50 +27,54 @@ import { AddReferentielComponent } from './referentiels/add-referentiel/add-refe
 
 const routes: Routes = [
   {path:'', redirectTo:'/login', pathMatch:'full'},
-  {path:'home', component: HomeComponent},
-  {path:'users', component:UsersComponent,
+  {path:'home', component: HomeComponent,
     children:[
-      {path:'add-user', component:AddUserComponent},
-      {path:':id', component:DetailUserComponent},
-      {path:':/editer', component:EditerUserComponent},
-      {path:'profile-user', component:DetailUserComponent},
+      {path:'users', component:UsersComponent,
+      children:[
+        {path:'add-user', component:AddUserComponent},
+        {path:':id', component:DetailUserComponent},
+        {path:':/editer', component:EditerUserComponent},
+        {path:'profile-user', component:DetailUserComponent},
+      ]
+    },
+    {path:'promos', component:PromosComponent},
+    {path:'rendus', component:RendusComponent},
+    {path:'briefs', component:BriefsComponent},
+    {path:'forums', component:ForumsComponent},
+    {path:'profiles', component:ProfilesComponent,
+      children:
+      [
+        {path:'add-profile', component:AddProfileComponent},
+      ]
+    },
+    {path:'explorers', component:ExplorersComponent},
+    {path:'competences', component:CompetencesComponent,
+      children:
+      [
+        {path:'add-competence', component: AddCompetenceComponent},
+        {path:':id', component: DetailCompetenceComponent},
+      ]
+    },
+    {path:'groupes-tags', component:GroupeTagsComponent},
+    {path:'referentiels', component:ReferentielsComponent,
+      children:
+      [
+        {path:'add-referentiel', component:AddReferentielComponent},
+      ]
+    },
+    {path:'notifications', component:NotificationsComponent},
+    {path:'profiles-sortie', component:ProfilesSortieComponent},
+    {path:'history-promos', component:HistoriquePromosComponent},
+    {path:'groupes-competences', component:GroupeCompetencesComponent,
+      children:
+      [
+        {path:"add-groupe-competences", component:AddGroupeCompetenceComponent},
+      ]
+    },
+  
+  
     ]
   },
-  {path:'promos', component:PromosComponent},
-  {path:'rendus', component:RendusComponent},
-  {path:'briefs', component:BriefsComponent},
-  {path:'forums', component:ForumsComponent},
-  {path:'profiles', component:ProfilesComponent,
-    children:
-    [
-      {path:'add-profile', component:AddProfileComponent},
-    ]
-  },
-  {path:'explorers', component:ExplorersComponent},
-  {path:'competences', component:CompetencesComponent,
-    children:
-    [
-      {path:'add-competence', component: AddCompetenceComponent},
-      {path:':id', component: DetailCompetenceComponent},
-    ]
-  },
-  {path:'groupes-tags', component:GroupeTagsComponent},
-  {path:'referentiels', component:ReferentielsComponent,
-    children:
-    [
-      {path:'add-referentiel', component:AddReferentielComponent},
-    ]
-  },
-  {path:'notifications', component:NotificationsComponent},
-  {path:'profiles-sortie', component:ProfilesSortieComponent},
-  {path:'history-promos', component:HistoriquePromosComponent},
-  {path:'groupes-competences', component:GroupeCompetencesComponent,
-    children:
-    [
-      {path:"add-groupe-competences", component:AddGroupeCompetenceComponent},
-    ]
-  },
-
 
   {path:'page-not-found', component:FoundComponent},
   {path:'**', redirectTo:'/page-not-found'},
