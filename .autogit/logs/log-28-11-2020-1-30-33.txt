@@ -1,0 +1,24 @@
+-------------------- Auto-Git Log --------------------
+		Mon Dec 28 2020 01:30:33 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/app-routing.module.ts
+* src/app/app.module.ts
+* src/app/competences/add-competence/add-competence.component.html
+* src/app/competences/competences.component.html
+* src/app/referentiels/referentiels.component.html
+
+
+Created files:
+* .autogit/logs/log-28-11-2020-1-0-27.txt
+* src/app/referentiels/add-referentiel/add-referentiel.component.css
+* src/app/referentiels/add-referentiel/add-referentiel.component.html
+* src/app/referentiels/add-referentiel/add-referentiel.component.spec.ts
+* src/app/referentiels/add-referentiel/add-referentiel.component.ts
+
+
+Deleted files:
+
+
+Renamed files:
