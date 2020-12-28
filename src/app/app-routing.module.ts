@@ -43,14 +43,18 @@ const routes: Routes = [
       ]
     },
     {path:'profile-user', component:ProfileUserComponent},
-    {path:'promos', component:PromosComponent},
+    {path:'promos', component:PromosComponent,
+      children:
+      [
+        {path:'apprenants', component:ApprenantsComponent},
+      ]
+    },
     {path:'rendus', component:RendusComponent},
     {path:'briefs', component:BriefsComponent},
     {path:'forums', component:ForumsComponent},
     {path:'cms', component:CmsComponent},
     {path:'admins', component:AdminsComponent},
     {path:'formateur', component:FormateursComponent},
-    {path:'apprenants', component:ApprenantsComponent},
     {path:'profiles', component:ProfilesComponent,
       children:
       [

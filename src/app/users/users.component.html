@@ -1,77 +1,76 @@
 <router-outlet></router-outlet>
-<div class="row mt-5">
+<div class="row mt-5 shadow p-2">
+    <div class="col-lg">
     <h1 class="display-5 text-center">Liste Users</h1>
-    <div class="col-lg-7">
         <a [routerLink]="['/home/users/add-user']">
         <button type="submit" class="btn btn-primary float-right"><img src="./assets/img/icon/add-user.png" alt=""></button>
         </a>
-    </div>
-
-    <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th scope="col">id</th>
-            <th scope="col">Avatar</th>
-            <th scope="col">Nom</th>
-            <th scope="col">Prenant</th>
-            <th scope="col">Mail</th>
-            <th scope="col">Profil</th>
-            <th scope="col">Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Mark</td>
-            <td>Otto</td>  
-            <td>@mdo</td>
-            <td>Mark</td>
-            <td>Mark</td>
-            <td>
-                <a class="ml-4" [routerLink]="['/users/1']">Details</a>
-                <a class="ml-4" [routerLink]="['/users/1/editer']">Editer</a>
-                <a class="ml-4" href="">Supprimer</a>
-            </td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Mark</td>
-            <td>Otto</td>  
-            <td>@mdo</td>
-            <td>Mark</td>
-            <td>Mark</td>
-            <td>
-                <a class="ml-4" [routerLink]="['/users/2']">Details</a>
-                <a class="ml-4" [routerLink]="['/users/2/editer']">Editer</a>
-                <a class="ml-4" href="">Supprimer</a>
-            </td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Mark</td>
-            <td>Otto</td>  
-            <td>@mdo</td>
-            <td>Mark</td>
-            <td>Mark</td>
-            <td>
-                <a class="ml-4" [routerLink]="['/users/3']">Details</a>
-                <a class="ml-4" [routerLink]="['/users/3/editer']">Editer</a>
-                <a class="ml-4" href="">Supprimer</a>
-            </td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Mark</td>
-            <td>Otto</td>  
-            <td>@mdo</td>
-            <td>Mark</td>
-            <td>Mark</td>
-            <td>
-                <a class="ml-4" [routerLink]="['/users/4']">Details</a>
-                <a class="ml-4" [routerLink]="['/users/4/editer']">Editer</a>
-                <a class="ml-4" href="">Supprimer</a>
-            </td>
-          </tr>
-        </tbody>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">id</th>
+              <th scope="col">Avatar</th>
+              <th scope="col">Nom</th>
+              <th scope="col">Prenant</th>
+              <th scope="col">Mail</th>
+              <th scope="col">Profil</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Mark</td>
+              <td>Otto</td>  
+              <td>@mdo</td>
+              <td>Mark</td>
+              <td>Mark</td>
+              <td>
+                  <a class="ml-4" [routerLink]="['/users/1']"><img src="/src/assets/img/icon/" alt=""></a>
+                  <a class="ml-4" [routerLink]="['/users/1/editer']"><img src="./assets/img/icon/upd.png" alt=""></a>
+                  <a class="ml-4" href="">Supprimer</a>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Mark</td>
+              <td>Otto</td>  
+              <td>@mdo</td>
+              <td>Mark</td>
+              <td>Mark</td>
+              <td>
+                  <a class="ml-4" [routerLink]="['/users/2']">Details</a>
+                  <a class="ml-4" [routerLink]="['/users/2/editer']">Editer</a>
+                  <a class="ml-4" href="">Supprimer</a>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Mark</td>
+              <td>Otto</td>  
+              <td>@mdo</td>
+              <td>Mark</td>
+              <td>Mark</td>
+              <td>
+                  <a class="ml-4" [routerLink]="['/users/3']">Details</a>
+                  <a class="ml-4" [routerLink]="['/users/3/editer']">Editer</a>
+                  <a class="ml-4" href="">Supprimer</a>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Mark</td>
+              <td>Otto</td>  
+              <td>@mdo</td>
+              <td>Mark</td>
+              <td>Mark</td>
+              <td>
+                  <a class="ml-4" [routerLink]="['/users/4']">Details</a>
+                  <a class="ml-4" [routerLink]="['/users/4/editer']">Editer</a>
+                  <a class="ml-4" href="">Supprimer</a>
+              </td>
+            </tr>
+          </tbody>
       </table>
+    </div>
 </div>

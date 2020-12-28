@@ -75,9 +75,12 @@
                     <button type="submit" class="btn btn-primary"><img src="./assets/img/icon/return.png" alt=""> RETOUR</button>
                   </div>
                   <div class="col-lg-6">
-                    <button type="submit" class="btn btn-primary">CREER LA PROMOTION ET AJOUTER APPRENANT<img src="./assets/img/icon/suivant.png" alt=""> </button>
+                    <a [routerLink]="['/home/promos/apprenants']">
+                       <button type="submit" class="btn btn-primary">CREER LA PROMOTION ET AJOUTER APPRENANT<img src="./assets/img/icon/suivant.png" alt=""> </button>
+                    </a>
                   </div>
               </div>
             </fieldset>
         </form>
       </div>
+<router-outlet></router-outlet>
