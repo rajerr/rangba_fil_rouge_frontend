@@ -1,0 +1,22 @@
+-------------------- Auto-Git Log --------------------
+		Mon Dec 28 2020 14:14:29 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/app.component.html
+* src/app/users/add-user/add-user.component.html
+* src/app/users/users.component.html
+* src/environments/environment.ts
+
+
+Created files:
+* .autogit/logs/log-28-11-2020-13-44-23.txt
+* src/app/services/authentification.service.spec.ts
+* src/app/services/authentification.service.ts
+* src/assets/img/icon/vue.png
+
+
+Deleted files:
+
+
+Renamed files:
