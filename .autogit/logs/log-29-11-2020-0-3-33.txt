@@ -1,0 +1,25 @@
+-------------------- Auto-Git Log --------------------
+		Tue Dec 29 2020 00:03:33 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/_helpers/authentification.interceptor.ts
+* src/app/app-routing.module.ts
+* src/app/app.component.html
+* src/app/app.module.ts
+* src/app/groupe-tags/groupe-tags.component.html
+* src/app/services/authentification.service.ts
+
+
+Created files:
+* .autogit/logs/log-28-11-2020-22-56-4.txt
+* src/app/groupe-tags/tags/tags.component.css
+* src/app/groupe-tags/tags/tags.component.html
+* src/app/groupe-tags/tags/tags.component.spec.ts
+* src/app/groupe-tags/tags/tags.component.ts
+
+
+Deleted files:
+
+
+Renamed files:
