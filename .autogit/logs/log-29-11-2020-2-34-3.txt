@@ -1,0 +1,30 @@
+-------------------- Auto-Git Log --------------------
+		Tue Dec 29 2020 02:34:03 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/app-routing.module.ts
+* src/app/app.module.ts
+* src/app/profiles-sortie/profiles-sortie.component.html
+
+
+Created files:
+* .autogit/logs/log-29-11-2020-2-3-56.txt
+* src/app/profiles-sortie/add-profiles-sortie/add-profiles-sortie.component.css
+* src/app/profiles-sortie/add-profiles-sortie/add-profiles-sortie.component.html
+* src/app/profiles-sortie/add-profiles-sortie/add-profiles-sortie.component.spec.ts
+* src/app/profiles-sortie/add-profiles-sortie/add-profiles-sortie.component.ts
+* src/app/profiles-sortie/edit-profiles-sortie/edit-profiles-sortie.component.css
+* src/app/profiles-sortie/edit-profiles-sortie/edit-profiles-sortie.component.html
+* src/app/profiles-sortie/edit-profiles-sortie/edit-profiles-sortie.component.spec.ts
+* src/app/profiles-sortie/edit-profiles-sortie/edit-profiles-sortie.component.ts
+* src/app/profiles-sortie/list-apprenant-by-profiles-sortie/list-apprenant-by-profiles-sortie.component.css
+* src/app/profiles-sortie/list-apprenant-by-profiles-sortie/list-apprenant-by-profiles-sortie.component.html
+* src/app/profiles-sortie/list-apprenant-by-profiles-sortie/list-apprenant-by-profiles-sortie.component.spec.ts
+* src/app/profiles-sortie/list-apprenant-by-profiles-sortie/list-apprenant-by-profiles-sortie.component.ts
+
+
+Deleted files:
+
+
+Renamed files:
