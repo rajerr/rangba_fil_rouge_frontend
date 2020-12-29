@@ -1,3 +1,4 @@
+import { TagsComponent } from './groupe-tags/tags/tags.component';
 import { ListApprenantComponent } from './apprenants/list-apprenant/list-apprenant.component';
 import { FormateursComponent } from './formateurs/formateurs.component';
 import { CmsComponent } from './cms/cms.component';
@@ -73,7 +74,12 @@ const routes: Routes = [
         {path:':id', component: DetailCompetenceComponent},
       ]
     },
-    {path:'groupes-tags', component:GroupeTagsComponent},
+    {path:'groupes-tags', component:GroupeTagsComponent,
+      children:
+      [
+        {path:'tags', component:TagsComponent},
+      ]
+    },
     {path:'referentiels', component:ReferentielsComponent,
       children:
       [

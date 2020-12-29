@@ -42,6 +42,7 @@ import { ListApprenantComponent } from './apprenants/list-apprenant/list-apprena
 import { ListFormateurComponent } from './formateurs/list-formateur/list-formateur.component';
 import { ListCmComponent } from './cms/list-cm/list-cm.component';
 import { ListAdminComponent } from './admins/list-admin/list-admin.component';
+import { TagsComponent } from './groupe-tags/tags/tags.component';
 
 @NgModule({
   declarations: [
@@ -83,6 +84,7 @@ import { ListAdminComponent } from './admins/list-admin/list-admin.component';
     ListFormateurComponent,
     ListCmComponent,
     ListAdminComponent,
+    TagsComponent,
   ],
   imports: [
     BrowserModule,
