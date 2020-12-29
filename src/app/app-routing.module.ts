@@ -1,3 +1,5 @@
+import { ListApprenantByProfilesSortieComponent } from './profiles-sortie/list-apprenant-by-profiles-sortie/list-apprenant-by-profiles-sortie.component';
+import { EditProfilesSortieComponent } from './profiles-sortie/edit-profiles-sortie/edit-profiles-sortie.component';
 import { TagsComponent } from './groupe-tags/tags/tags.component';
 import { ListApprenantComponent } from './apprenants/list-apprenant/list-apprenant.component';
 import { FormateursComponent } from './formateurs/formateurs.component';
@@ -31,6 +33,7 @@ import { AddGroupeCompetenceComponent } from './groupe-competences/add-groupe-co
 import { AddCompetenceComponent } from './competences/add-competence/add-competence.component';
 import { DetailCompetenceComponent } from './competences/detail-competence/detail-competence.component';
 import { AddReferentielComponent } from './referentiels/add-referentiel/add-referentiel.component';
+import { AddProfilesSortieComponent } from './profiles-sortie/add-profiles-sortie/add-profiles-sortie.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'/login', pathMatch:'full'},
@@ -87,7 +90,14 @@ const routes: Routes = [
       ]
     },
     {path:'notifications', component:NotificationsComponent},
-    {path:'profiles-sortie', component:ProfilesSortieComponent},
+    {path:'profiles-sortie', component:ProfilesSortieComponent,
+      children:
+      [
+        {path:'add-profile-sortie', component:AddProfilesSortieComponent},
+        {path:':id/edit', component:EditProfilesSortieComponent},
+        {path:'apprenants-by-profile-sortie', component:ListApprenantByProfilesSortieComponent},
+      ]
+    },
     {path:'history-promos', component:HistoriquePromosComponent},
     {path:'groupes-competences', component:GroupeCompetencesComponent,
       children:

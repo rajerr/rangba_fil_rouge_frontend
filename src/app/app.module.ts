@@ -43,6 +43,9 @@ import { ListFormateurComponent } from './formateurs/list-formateur/list-formate
 import { ListCmComponent } from './cms/list-cm/list-cm.component';
 import { ListAdminComponent } from './admins/list-admin/list-admin.component';
 import { TagsComponent } from './groupe-tags/tags/tags.component';
+import { EditProfilesSortieComponent } from './profiles-sortie/edit-profiles-sortie/edit-profiles-sortie.component';
+import { AddProfilesSortieComponent } from './profiles-sortie/add-profiles-sortie/add-profiles-sortie.component';
+import { ListApprenantByProfilesSortieComponent } from './profiles-sortie/list-apprenant-by-profiles-sortie/list-apprenant-by-profiles-sortie.component';
 
 @NgModule({
   declarations: [
@@ -85,6 +88,9 @@ import { TagsComponent } from './groupe-tags/tags/tags.component';
     ListCmComponent,
     ListAdminComponent,
     TagsComponent,
+    EditProfilesSortieComponent,
+    AddProfilesSortieComponent,
+    ListApprenantByProfilesSortieComponent,
   ],
   imports: [
     BrowserModule,

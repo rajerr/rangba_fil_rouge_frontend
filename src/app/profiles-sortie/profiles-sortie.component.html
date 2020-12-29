@@ -1,10 +1,11 @@
-<div class="col-lg-7 mt-5 shadow">
+<div class="row">
+  <div class="col-lg-7 mt-5 shadow">
     <h1 class="display-5 text-center bg-warning">Liste Profiles de Sortie</h1>
-        <a [routerLink]="['/home/profiles/add-profile']">
+        <a [routerLink]="['/home/profiles-sortie/add-profile-sortie']">
         <button type="submit" class="btn btn-primary float-right"><img src="./assets/img/icon/add.png" alt=""></button>
         </a>
         <table class="table table-bordered">
-          <thead class="bg-primary text-light">
+          <thead class="bg-primary text-light text-center">
             <tr>
               <th scope="col">Libelle</th>
               <th scope="col">Action</th>
@@ -14,6 +15,7 @@
             <tr>
               <td>Developpeur Back</td>
               <td>
+                <a class="ml-4" [routerLink]="['/home/profiles-sortie/apprenants-by-profile-sortie']">Lister Apprenants</a>
                   <a class="ml-4" [routerLink]="['profiles-sortie/1/edit']"><img src="./assets/img/icon/upd.png" alt=""></a>
                   <a class="ml-4" [routerLink]="['profiles-sortie/1']"><img src="./assets/img/icon/delete.png" alt=""></a>
               </td>
@@ -21,32 +23,39 @@
             <tr>
               <td>Developpeur front</td>
               <td>
-                  <a class="ml-4" href="">Editer</a>
-                  <a class="ml-4" href="">Supprimer</a>
+                <a class="ml-4" [routerLink]="['/home/profiles-sortie/apprenants-by-profile-sortie']">Lister Apprenants</a>
+                <a class="ml-4" [routerLink]="['profiles-sortie/1/edit']"><img src="./assets/img/icon/upd.png" alt=""></a>
+                <a class="ml-4" [routerLink]="['profiles-sortie/1']"><img src="./assets/img/icon/delete.png" alt=""></a>
               </td>
             </tr>
             <tr>
               <td>Developpeur Full stack</td>
               <td>
-                  <a class="ml-4" href="">Editer</a>
-                  <a class="ml-4" href="">Supprimer</a>
+                <a class="ml-4" [routerLink]="['/home/profiles-sortie/apprenants-by-profile-sortie']">Lister Apprenants</a>
+                <a class="ml-4" [routerLink]="['profiles-sortie/1/edit']"><img src="./assets/img/icon/upd.png" alt=""></a>
+                <a class="ml-4" [routerLink]="['profiles-sortie/1']"><img src="./assets/img/icon/delete.png" alt=""></a>
               </td>
             </tr>
             <tr>
               <td>Data Scientist</td>
               <td>
-                  <a class="ml-4" href="">Editer</a>
-                  <a class="ml-4" href="">Supprimer</a>
+                <a class="ml-4" [routerLink]="['/home/profiles-sortie/apprenants-by-profile-sortie']">Lister Apprenants</a>
+                <a class="ml-4" [routerLink]="['profiles-sortie/1/edit']"><img src="./assets/img/icon/upd.png" alt=""></a>
+                <a class="ml-4" [routerLink]="['profiles-sortie/1']"><img src="./assets/img/icon/delete.png" alt=""></a>
               </td>
             </tr>
             <tr>
               <td>Referent Digital</td>
               <td>
-                  <a class="ml-4" href="">Editer</a>
-                  <a class="ml-4" href="">Supprimer</a>
+                <a class="ml-4" [routerLink]="['/home/profiles-sortie/apprenants-by-profile-sortie']">Lister Apprenants</a>
+                <a class="ml-4" [routerLink]="['profiles-sortie/1/edit']"><img src="./assets/img/icon/upd.png" alt=""></a>
+                <a class="ml-4" [routerLink]="['profiles-sortie/1']"><img src="./assets/img/icon/delete.png" alt=""></a>
               </td>
             </tr>
           </tbody>
       </table>
 </div>
-<router-outlet></router-outlet>
+<div class="col-lg-5 mt-5">
+  <router-outlet></router-outlet>
+</div>
+</div>
