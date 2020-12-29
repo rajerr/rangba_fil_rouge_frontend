@@ -1,12 +1,12 @@
-<div class="border border-primary mt-3">
-    <h1 class="display-5 text-center">Lister  les Competence</h1>
+<div class="shadow mt-5">
+    <h1 class="display-5 text-center bg-warning">Lister  les Competences</h1>
     <div class="col-lg">
         <a [routerLink]="['/home/competences/add-competence']">
             <button type="submit" class="btn btn-primary float-right"><img src="./assets/img/icon/add.png" alt=""></button>
         </a>
     </div>
     <div class="row mt-5">
-        <div class="col-lg-6 border border-info mb-2">
+        <div class="col-lg-6  mb-2 shadow">
             <form action="">
             <div class="form-group col-lg">
                 <select class="form-control " id="exampleSelect1">
@@ -30,14 +30,14 @@
             </div>
             </form>
         </div>
-        <div class="col-lg-6 border border-info">
-           <span class="col-lg-6">
-            <a class="col-lg-3" href="">Niveau 1</a>
-            <a class="col-lg-3" href="">Niveau 2</a>
-            <a class="col-lg-3" href="">Niveau 3</a>
+        <div class="col-lg-6 shadow ">
+           <span class="col-lg-6  ">
+            <a class="col-lg-3 text-light btn btn-primary" href="">Niveau 1</a>
+            <a class="col-lg-3 text-light btn btn-primary ml-1 mt-1" href="">Niveau 2</a>
+            <a class="col-lg-3 text-light btn btn-primary ml-1 mt-1" href="">Niveau 3</a>
            </span><hr>
-           <textarea class="ml-3 border border-primary text-secondary" cols="22" rows="10" name="" id="" >Groupe d'action à réaliser</textarea>
-           <textarea class="ml-3 border border-primary text-secondary" cols="22" rows="10" name="" id="" >Critère d'évaluation</textarea>
+           <textarea class="ml-3 border border-primary text-secondary shadow" cols="22" rows="10" name="" id="" >Groupe d'action à réaliser</textarea>
+           <textarea class="ml-3 border border-primary text-secondary shadow" cols="22" rows="10" name="" id="" >Critère d'évaluation</textarea>
         </div>
     </div>
 </div> 
