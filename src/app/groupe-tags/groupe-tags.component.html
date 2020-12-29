@@ -1,25 +1,44 @@
 <div class=" shadow p-3 mt-3">
-    <h2 class="display-5 text-center bg-primary">Gestion des Tags</h2>
+    <h2 class="display-5 text-center bg-primary shadow">Gestion des Tags</h2>
+        <app-tags></app-tags>
     <div class="row mt-5">
         <div class="col-lg-7 mx-auto block mb-2">
-            <form action="">
-            <div class="form-group col-lg">
-                <label for="select">Libelle</label>
-                <input type="text" class="form-control" name="" id="" placeholder="Developper le front d'une application">
-            </div>
-            <div class="form-group col-lg">
-                <label for="select">Tags</label><br>
-                <textarea class="mx-auto form-control" name="tags" id="" cols="50" rows="10"></textarea>
-            </div>
+            <h2 class="display-5 text-center shadow">Groupe des Tags</h2>
             <div class="row">
-                <button type="submit" class="btn btn-primary mx-auto">SOUMETTRE</button>
+                <a class="ml-2" href="#">
+                    <button type="submit" class="btn btn-primary mx-auto ">Developpement Mobile</button>
+                </a>
+                <a class="ml-2" href="#">
+                    <button type="submit" class="btn btn-primary mx-auto ">Système & Réseaux</button>
+                </a>
+                <a class="ml-2" href="#">
+                    <button type="submit" class="btn btn-primary mx-auto ">Objets connectés</button>
+                </a>
             </div>
-            </form>
         </div>
     </div>
-    <div class="row">
-        <app-tags></app-tags>
+    <div class="row mt-5">
+        <div class="col-lg-7 mx-auto block mb-2">
+            <h2 class="display-5 text-center shadow">Tags</h2>
+            <div class="row mt-3">
+                <div class="col-lg round">
+                    <button type="submit" class="btn btn-primary mx-auto ">Html 5</button>
+                    <a class="ml-2" href="#"><img src="./assets/img/icon/close.png" alt=""></a>
+                </div>
+                <div class="col-lg round">
+                    <button type="submit" class="btn btn-primary mx-auto ">Html 5</button>
+                    <a class="ml-2" href="#"><img src="./assets/img/icon/close.png" alt=""></a>
+                </div>
+                <div class="col-lg round">
+                    <button type="submit" class="btn btn-primary mx-auto ">Html 5</button>
+                    <a class="ml-2" href="#"><img src="./assets/img/icon/close.png" alt=""></a>
+                </div>
+                <div class="col-lg round">
+                    <button type="submit" class="btn btn-primary mx-auto ">Html 5</button>
+                    <a class="ml-2" href="#"><img src="./assets/img/icon/close.png" alt=""></a>
+                </div>
+            </div>
+        </div>
     </div>
 </div> 
-
 <router-outlet></router-outlet>
