@@ -6,33 +6,33 @@
 
   <div class="navbar-collapse collapse" id="navbarColor01" >
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
+      <li class="nav-item" routerLinkActive="active">
         <a class="nav-link" [routerLink]="['home/briefs']">
-          <img class="ml-2" src="./assets/img/icon/brief.png" alt="brief" ><br>
+          <img src="./assets/img/icon/brief.png" alt="brief" >
           <span>Briefs</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['home/rendus']">
-          <img class="ml-3" src="./assets/img/icon/rendu.png" alt=""><br>
+        <a class="nav-link" [routerLink]="['home/rendus']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}">
+          <img  src="./assets/img/icon/rendu.png" alt="">
           <span>Rendus</span>
         </a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" routerLinkActive="active">
         <a class="nav-link" [routerLink]="['home/explorers']">
-          <img class="ml-3" src="./assets/img/icon/explorer.png" alt=""><br>
+          <img  src="./assets/img/icon/explorer.png" alt="">
           <span>Explorer</span>
         </a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" routerLinkActive="active">
         <a class="nav-link" [routerLink]="['home/forums']">
-          <img class="ml-2" src="./assets/img/icon/forum.png" alt=""><br>
+          <img  src="./assets/img/icon/forum.png" alt="">
           <span>Forum</span>
         </a>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown" routerLinkActive="active">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-          <img class="ml-4" src="./assets/img/icon/setting.png" alt=""><br>
+          <img src="./assets/img/icon/setting.png" alt="">
           <span>Parametres</span>
         </a>
         <div class="dropdown-menu">
@@ -44,9 +44,9 @@
           <a class="dropdown-item border border-light text-light bg-primary" [routerLink]="['home/profiles-sortie']">Profile de Sorties</a>
         </div>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown" routerLinkActive="active">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-          <img class="ml-4" src="./assets/img/icon/user.png" alt=""><br>
+          <img  src="./assets/img/icon/user.png" alt="">
           <span>Users</span>
         </a>
         <div class="dropdown-menu">
@@ -54,9 +54,9 @@
           <a class="dropdown-item border border-light text-light bg-primary" [routerLink]="['home/profiles']">Profiles</a>
         </div>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" routerLinkActive="active">
         <a class="nav-link" [routerLink]="['home/history-promos']">
-          <img class="ml-5" src="./assets/img/icon/history.png" alt=""><br>
+          <img  src="./assets/img/icon/history.png" alt="">
           <span>Historique des promos</span>
         </a>
       </li>
@@ -71,15 +71,15 @@
       </div>
     </div>
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
+      <li class="nav-item" routerLinkActive="active">
         <a class="nav-link" [routerLink]="['home/profile-user']">
-          <img class="ml-2" class="ml-2" src="./assets/img/icon/profile.png" alt=""><br>
+          <img   src="./assets/img/icon/profile.png" alt="">
           <span>Profile</span>
         </a>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown" routerLinkActive="active">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-          <img class="ml-4" src="./assets/img/icon/user.png" alt=""><br>
+          <img  src="./assets/img/icon/user.png" alt="">
           <span>Notification</span>
         </a>
         <div class="dropdown-menu">
