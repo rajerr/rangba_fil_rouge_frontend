@@ -1,14 +1,14 @@
 <div class="row mt-5 shadow p-2">
     <div class="col-lg">
       <div class="form-group col-lg-4 float-right">
-        <input id="search" class="form-control float-right" type="text" placeholder="tapez votre recherche ici" name="search">
+        <input id="search" class="form-control float-right mt-1" type="text" placeholder="tapez votre recherche ici" name="search">
       </div>
-    <h1 class="display-5 text-center">Liste Users</h1>
+    <h1 class="display-5 text-center bg-primary text-light">Liste Users</h1>
         <a [routerLink]="['/home/users/add-user']">
-        <button type="submit" class="btn btn-primary float-right"><img src="./assets/img/icon/add-user.png" alt=""></button>
+          <button type="submit" class="btn btn-primary float-right"><img src="./assets/img/icon/add-user.png" alt=""></button>
         </a>
         <table class="table table-bordered">
-          <thead>
+          <thead class="bg-warning text-center">
             <tr>
               <th scope="col">id</th>
               <th scope="col">Avatar</th>

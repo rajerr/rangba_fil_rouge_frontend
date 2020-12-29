@@ -40,7 +40,7 @@ const routes: Routes = [
       children:[
         {path:'add-user', component:AddUserComponent},
         {path:':id', component:DetailUserComponent},
-        {path:':/editer', component:EditerUserComponent},
+        {path:':id/editer', component:EditerUserComponent},
       ]
     },
     {path:'profile-user', component:ProfileUserComponent},
