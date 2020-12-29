@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Tue Dec 29 2020 14:21:19 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/_helpers/authentification.interceptor.ts
+* src/app/login/login.component.ts
+* src/app/services/authentification.service.ts
+
+
+Created files:
+* .autogit/logs/log-29-11-2020-9-48-3.txt
+
+
+Deleted files:
+
+
+Renamed files:
