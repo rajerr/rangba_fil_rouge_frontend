@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Tue Dec 29 2020 09:17:57 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/app.component.html
+* src/app/header/header.component.html
+* src/app/login/login.component.html
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:
