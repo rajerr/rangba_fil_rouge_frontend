@@ -4,13 +4,8 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="navbar-collapse collapse" id="navbarColor01" style="">
+  <div class="navbar-collapse collapse" id="navbarColor01" >
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" [routerLink]="['/home']">Home
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
       <li class="nav-item">
         <a class="nav-link" [routerLink]="['home/briefs']">
           <img class="ml-2" src="./assets/img/icon/brief.png" alt="brief" ><br>
@@ -18,25 +13,79 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link" [routerLink]="['home/rendus']">
+          <img class="ml-3" src="./assets/img/icon/rendu.png" alt=""><br>
+          <span>Rendus</span>
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" [routerLink]="['home/explorers']">
+          <img class="ml-3" src="./assets/img/icon/explorer.png" alt=""><br>
+          <span>Explorer</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['home/forums']">
+          <img class="ml-2" src="./assets/img/icon/forum.png" alt=""><br>
+          <span>Forum</span>
+        </a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          <img class="ml-4" src="./assets/img/icon/setting.png" alt=""><br>
+          <span>Parametres</span>
+        </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Separated link</a>
+          <a class="dropdown-item border border-light text-light bg-primary" [routerLink]="['home/promos']">Promos</a>
+          <a class="dropdown-item border border-light text-light bg-primary" [routerLink]="['home/referentiels']">Referentiels</a>
+          <a class="dropdown-item border border-light text-light bg-primary" [routerLink]="['home/groupes-competences']">Groupe de competences</a>
+          <a class="dropdown-item border border-light text-light bg-primary" [routerLink]="['home/competences']">competences</a>
+          <a class="dropdown-item border border-light text-light bg-primary" [routerLink]="['home/groupes-tags']">Groupe de tags</a>
+          <a class="dropdown-item border border-light text-light bg-primary" [routerLink]="['home/profiles-sortie']">Profile de Sorties</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          <img class="ml-4" src="./assets/img/icon/user.png" alt=""><br>
+          <span>Users</span>
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item border border-light text-light bg-primary" [routerLink]="['home/users']">Utilisateurs</a>
+          <a class="dropdown-item border border-light text-light bg-primary" [routerLink]="['home/profiles']">Profiles</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['home/history-promos']">
+          <img class="ml-5" src="./assets/img/icon/history.png" alt=""><br>
+          <span>Historique des promos</span>
+        </a>
+      </li>
+    </ul>
+    <div class="collapse navbar-collapse ml-5 mt-4">
+      <div class="form-group">
+        <select class="form-control" id="exampleSelect1">
+          <option>SA COHORTE 1</option>
+          <option>SA COHORTE 2</option>
+          <option>SA COHORTE 3</option>
+        </select>
+      </div>
+    </div>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['home/profile-user']">
+          <img class="ml-2" class="ml-2" src="./assets/img/icon/profile.png" alt=""><br>
+          <span>Profile</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          <img class="ml-4" src="./assets/img/icon/user.png" alt=""><br>
+          <span>Notification</span>
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item border border-light text-light bg-primary" [routerLink]="['home/users']">Message</a>
         </div>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </div>
 </nav>
