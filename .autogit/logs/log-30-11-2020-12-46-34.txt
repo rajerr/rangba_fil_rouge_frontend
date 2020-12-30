@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Wed Dec 30 2020 12:46:34 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/home/home.component.html
+* src/styles.css
+
+
+Created files:
+* .autogit/logs/log-30-11-2020-12-16-26.txt
+
+
+Deleted files:
+
+
+Renamed files:

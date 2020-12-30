@@ -2,8 +2,12 @@
 <div class="container">
     <router-outlet></router-outlet> 
     <div class="jumbotron shadow">
-        <img  src="./assets/img/icon/user.png" alt="">
-        <label for="" class="text-bold"><h3 class="display-6 ">Les Apprenants de la Promos</h3></label>
+        
+        <label for="" class="text-bold">
+            <h3 class="display-6 ">
+                <img  src="./assets/img/icon/user.png" alt="">Les Apprenants de la Promos
+            </h3>
+        </label>
         <div class="row">
             <div class="col-lg-4">
                 <label for=""><h5 class="display-6">Liste Apprenants</h5></label><hr>
@@ -15,10 +19,12 @@
         </div>
     </div>
     <div class="jumbotron shadow">
-        <img  src="./assets/img/icon/user.png" alt="">
         <div class="row">
-            <div class="col-lg-4"> <label for="" class="text-bold">
-                <h3 class="display-6 ">Mes Groupes</h3></label> 
+            <div class="col-lg-4"> 
+                <label for="" class="text-bold">
+                    <h3 class="display-6 ">
+                        <img  src="./assets/img/icon/user.png" alt="">Mes Groupes</h3>
+                    </label> 
             </div>
             <div class="col-lg-8">
                 <label class="col-lg">Liste des apprenants</label>
@@ -38,30 +44,56 @@
         </div>
     </div>
     <div class="jumbotron shadow">
-        <img  src="./assets/img/icon/user.png" alt="">
-        <label for="" class="text-bold"><h3 class="display-6 ">Les Briefs de ma Promo</h3></label>
-        <div class="row">
 
-            <div class="col-lg-6">
+          <label for="" class="text-bold">
+                <h3 class="display-6 ">
+                    <img src="./assets/img/icon/brief.png" alt="brief" >Les Briefs de ma Promo
+                </h3>
+            </label>
+        <div class="row">
+            <div class="col-lg">
                 <label for="">Rechercher</label>
                 <input type="text" name="" class="form-control col-lg-6" id="">
                 <a  class="btn btn-sm btn-light text-primary fcol-lg-2 float-right" [routerLink]="['briefs']"> Creer un Brief<img src="./assets/img/icon/add.png" alt=""></a>
                 <a class="btn btn-sm btn-warning float-right col-lg-4 mt-1" [routerLink]="['rendus']">Corriger les rendus</a> 
             </div>
             <div class="col-lg-6">
-                
+                <div class="card mb-3 shadow" style="max-width: 20rem;">
+                    <div class="card-header">
+                        <img src="./assets/img/academy.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Présentation: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, amet.</p>
+                        <div class="card-footer">
+                            <select class="form-control " id="exampleSelect1">
+                                <option>Non assigné</option>
+                                <option>Assigné</option>
+                                <option>Modifié</option>
+                                <option>Dupliqué</option>
+                                <option>Archivé</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="jumbotron shadow">
-        <img  src="./assets/img/icon/user.png" alt="">
-        <label for="" class="text-bold"><h3 class="display-6 ">Mes Referentiels</h3></label>
+        <label for="" class="text-bold">
+            <h3 class="display-6 ">
+                <img src="./assets/img/icon/brief.png" alt="brief" >Mes Referentiels
+            </h3>
+        </label>
         <div class="row">
         </div>
     </div>
     <div class="jumbotron shadow">
-        <img  src="./assets/img/icon/user.png" alt="">
-        <label for="" class="text-bold"><h3 class="display-6 ">Statistique</h3></label>
+        
+        <label for="" class="text-bold">
+            <h3 class="display-6 ">
+                <img  src="./assets/img/icon/sta.png" alt="">Statistique
+            </h3>
+        </label>
         <div class="row">
         </div>
     </div>
