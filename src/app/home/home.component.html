@@ -51,14 +51,31 @@
                 </h3>
             </label>
         <div class="row">
-            <div class="col-lg">
                 <label for="">Rechercher</label>
                 <input type="text" name="" class="form-control col-lg-6" id="">
-                <a  class="btn btn-sm btn-light text-primary fcol-lg-2 float-right" [routerLink]="['briefs']"> Creer un Brief<img src="./assets/img/icon/add.png" alt=""></a>
-                <a class="btn btn-sm btn-warning float-right col-lg-4 mt-1" [routerLink]="['rendus']">Corriger les rendus</a> 
+                <a class="btn btn-sm btn-light text-primary col-lg-2 float-right" [routerLink]="['briefs']"> Creer un Brief<img src="./assets/img/icon/add.png" alt=""></a>
+                <a class="tn btn-sm btn-light bg-warning text-primary col-lg-2 float-right" [routerLink]="['rendus']">Corriger les rendus<img  src="./assets/img/icon/rendu.png" alt=""></a> 
+            <div class="col-lg-6">
+                <div class="card mb-3 shadow mt-4 ml-5" style="max-width: 25rem;">
+                    <div class="card-header">
+                        <img src="./assets/img/academy.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, officia? Présentation: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, amet.</p>
+                        <div class="card-footer">
+                            <select class="form-control " id="exampleSelect1">
+                                <option>Non assigné</option>
+                                <option>Assigné</option>
+                                <option>Modifié</option>
+                                <option>Dupliqué</option>
+                                <option>Archivé</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-6">
-                <div class="card mb-3 shadow" style="max-width: 20rem;">
+                <div class="card mb-3 shadow mt-4" style="max-width: 25rem;">
                     <div class="card-header">
                         <img src="./assets/img/academy.png" alt="">
                     </div>
