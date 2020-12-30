@@ -48,15 +48,15 @@ export class LoginComponent implements OnInit {
           }
           // tslint:disable-next-line: triple-equals
           if (decodeToken.roles[0] == 'ROLE_FORMATEUR'){
-            this.router.navigateByUrl('/home/formateurs');
+            this.router.navigateByUrl('/');
           }
           // tslint:disable-next-line: triple-equals
           if (decodeToken.roles[0] == 'ROLE_CM') {
-            this.router.navigateByUrl('/home/cms');
+            this.router.navigateByUrl('/');
           }
           // tslint:disable-next-line: triple-equals
           if (decodeToken.roles[0] == 'ROLE_APPRENANT') {
-            this.router.navigateByUrl('/home/apprenants');
+            this.router.navigateByUrl('/');
           }
         },
         (err) => {
