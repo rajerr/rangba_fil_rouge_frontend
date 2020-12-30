@@ -1,7 +1,7 @@
 <app-header></app-header>
 <div class="container">
     <router-outlet></router-outlet> 
-    <div class="jumbotron shadow">
+    <div class="jumbotron">
         
         <label for="" class="text-bold">
             <h3 class="display-6 ">
@@ -18,7 +18,7 @@
             </div>
         </div>
     </div>
-    <div class="jumbotron shadow">
+    <div class="jumbotron ">
         <div class="row">
             <div class="col-lg-4"> 
                 <label for="" class="text-bold">
@@ -43,7 +43,7 @@
             </div>
         </div>
     </div>
-    <div class="jumbotron shadow">
+    <div class="jumbotron ">
 
           <label for="" class="text-bold">
                 <h3 class="display-6 ">
@@ -51,10 +51,10 @@
                 </h3>
             </label>
         <div class="row">
-                <label for="">Rechercher</label>
+                <label class="" for="">Rechercher</label>
                 <input type="text" name="" class="form-control col-lg-6" id="">
-                <a class="btn btn-sm btn-light text-primary col-lg-2 float-right" [routerLink]="['briefs']"> Creer un Brief<img src="./assets/img/icon/add.png" alt=""></a>
-                <a class="tn btn-sm btn-light bg-warning text-primary col-lg-2 float-right" [routerLink]="['rendus']">Corriger les rendus<img  src="./assets/img/icon/rendu.png" alt=""></a> 
+                <a class="btn btn-sm btn-light text-primary col-lg-2 float-right" [routerLink]="['briefs']"> Creer un Brief<img class="ml-2" src="./assets/img/icon/add.png" alt=""></a>
+                <a class="tn btn-sm btn-warning text-dark float-right" [routerLink]="['rendus']">Corriger les rendus<img  src="./assets/img/icon/rendu.png" alt=""></a> 
             <div class="col-lg-6">
                 <div class="card mb-3 shadow mt-4 ml-5" style="max-width: 25rem;">
                     <div class="card-header">
@@ -75,12 +75,12 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="card mb-3 shadow mt-4" style="max-width: 25rem;">
+                <div class="card mb-3 ml-5 mt-4" style="max-width: 25rem;">
                     <div class="card-header">
                         <img src="./assets/img/academy.png" alt="">
                     </div>
                     <div class="card-body">
-                        <p class="card-text">Présentation: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, amet.</p>
+                        <p class="card-text">Présentation: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, amet.</p>
                         <div class="card-footer">
                             <select class="form-control " id="exampleSelect1">
                                 <option>Non assigné</option>
@@ -93,9 +93,50 @@
                     </div>
                 </div>
             </div>
+            <div class="col-lg-6">
+                <div class="card mb-3  ml-5 mt-4" style="max-width: 25rem;">
+                    <div class="card-header">
+                        <img src="./assets/img/academy.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Présentation: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, amet.</p>
+                        <div class="card-footer">
+                            <select class="form-control " id="exampleSelect1">
+                                <option>Non assigné</option>
+                                <option>Assigné</option>
+                                <option>Modifié</option>
+                                <option>Dupliqué</option>
+                                <option>Archivé</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card mb-3 ml-5 mt-4" style="max-width: 25rem;">
+                    <div class="card-header">
+                        <img src="./assets/img/academy.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Présentation: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, amet.</p>
+                        <div class="card-footer">
+                            <select class="form-control " id="exampleSelect1">
+                                <option>Non assigné</option>
+                                <option>Assigné</option>
+                                <option>Modifié</option>
+                                <option>Dupliqué</option>
+                                <option>Archivé</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <a href="" class="tn btn-sm btn-primary ml-5">voir tous les briefs</a>
+            </div>
         </div>
     </div>
-    <div class="jumbotron shadow">
+    <div class="jumbotron ">
         <label for="" class="text-bold">
             <h3 class="display-6 ">
                 <img src="./assets/img/icon/brief.png" alt="brief" >Mes Referentiels
@@ -104,7 +145,7 @@
         <div class="row">
         </div>
     </div>
-    <div class="jumbotron shadow">
+    <div class="jumbotron ">
         
         <label for="" class="text-bold">
             <h3 class="display-6 ">
