@@ -1,12 +1,15 @@
+<router-outlet></router-outlet>
 <div class="row mt-5 shadow p-2">
     <div class="col-lg">
       <div class="form-group col-lg-4 float-right">
         <input id="search" class="form-control float-right mt-1" type="text" placeholder="tapez votre recherche ici" name="search">
       </div>
-    <h1 class="display-5 text-center bg-primary text-light">Liste Users</h1>
-        <a [routerLink]="['/home/users/add-user']">
-          <button type="submit" class="btn btn-primary float-right"><img src="./assets/img/icon/add-user.png" alt=""></button>
-        </a>
+        <h1 class="display-5 text-center bg-primary text-light">Liste Users</h1>
+        <div class="fom-group float-right">
+          <a class="btn btn-primary form-control float-right" [routerLink]="['/home/users/add-user']">
+            Ajouter <img src="./assets/img/icon/add-user.png" alt="">
+          </a>
+        </div>
         <table class="table table-bordered">
           <thead class="bg-warning text-center">
             <tr>
@@ -76,4 +79,3 @@
       </table>
     </div>
 </div>
-<router-outlet></router-outlet>
