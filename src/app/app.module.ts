@@ -21,7 +21,7 @@ import { CompetencesComponent } from './competences/competences.component';
 import { GroupeCompetencesComponent } from './groupe-competences/groupe-competences.component';
 import { GroupeTagsComponent } from './groupe-tags/groupe-tags.component';
 import { ProfilesSortieComponent } from './profiles-sortie/profiles-sortie.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HistoriquePromosComponent } from './historique-promos/historique-promos.component';
 import { DetailUserComponent } from './users/detail-user/detail-user.component';
 import { NotificationsComponent } from './notifications/notifications.component';
@@ -46,6 +46,8 @@ import { TagsComponent } from './groupe-tags/tags/tags.component';
 import { EditProfilesSortieComponent } from './profiles-sortie/edit-profiles-sortie/edit-profiles-sortie.component';
 import { AddProfilesSortieComponent } from './profiles-sortie/add-profiles-sortie/add-profiles-sortie.component';
 import { ListApprenantByProfilesSortieComponent } from './profiles-sortie/list-apprenant-by-profiles-sortie/list-apprenant-by-profiles-sortie.component';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AuthentificationInterceptor } from './_helpers/authentification.interceptor';
 
 @NgModule({
   declarations: [
@@ -96,10 +98,11 @@ import { ListApprenantByProfilesSortieComponent } from './profiles-sortie/list-a
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
 
   ],
-  providers: [],
+  providers: [{provide: HTTP_INTERCEPTORS, useClass: AuthentificationInterceptor, multi: true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
