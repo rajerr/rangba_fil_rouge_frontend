@@ -104,7 +104,12 @@ const routes: Routes = [
     {path:'groupes-competences', component:GroupeCompetencesComponent,
       children:
       [
-        {path:"add-groupe-competences", component:AddGroupeCompetenceComponent},
+        {path:"add-groupe-competences", component:AddGroupeCompetenceComponent,
+          children:
+          [
+            {path:'add-competence', component: AddCompetenceComponent},
+          ]
+        },
       ]
     },
   

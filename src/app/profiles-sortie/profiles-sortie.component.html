@@ -1,10 +1,11 @@
+<router-outlet></router-outlet>
 <div class="row">
-  <div class="col-lg-7 mt-5 shadow">
+  <div class="col-lg mx-auto mt-5 shadow">
     <h1 class="display-5 text-center bg-warning">Liste Profiles de Sortie</h1>
         <a [routerLink]="['/home/profiles-sortie/add-profile-sortie']">
-        <button type="submit" class="btn btn-primary float-right"><img src="./assets/img/icon/add.png" alt=""></button>
+        <button type="submit" class="btn btn-primary float-right">Ajouter <img src="./assets/img/icon/add-user.png" alt=""></button>
         </a>
-        <table class="table table-bordered">
+        <table class="table table-bordered mt-4">
           <thead class="bg-primary text-light text-center">
             <tr>
               <th scope="col">Libelle</th>
@@ -54,8 +55,5 @@
             </tr>
           </tbody>
       </table>
-</div>
-<div class="col-lg-5 mt-5">
-  <router-outlet></router-outlet>
 </div>
 </div>
