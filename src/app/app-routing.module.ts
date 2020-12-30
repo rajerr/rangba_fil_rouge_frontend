@@ -1,3 +1,4 @@
+import { LoginComponent } from './login/login.component';
 import { ListApprenantByProfilesSortieComponent } from './profiles-sortie/list-apprenant-by-profiles-sortie/list-apprenant-by-profiles-sortie.component';
 import { EditProfilesSortieComponent } from './profiles-sortie/edit-profiles-sortie/edit-profiles-sortie.component';
 import { TagsComponent } from './groupe-tags/tags/tags.component';
@@ -37,6 +38,7 @@ import { AddProfilesSortieComponent } from './profiles-sortie/add-profiles-sorti
 
 const routes: Routes = [
   {path:'', redirectTo:'/login', pathMatch:'full'},
+  {path:'login', component:LoginComponent},
   {path:'home', component: HomeComponent,
     children:[
       {path:'users', component:UsersComponent,

@@ -46,7 +46,7 @@ import { TagsComponent } from './groupe-tags/tags/tags.component';
 import { EditProfilesSortieComponent } from './profiles-sortie/edit-profiles-sortie/edit-profiles-sortie.component';
 import { AddProfilesSortieComponent } from './profiles-sortie/add-profiles-sortie/add-profiles-sortie.component';
 import { ListApprenantByProfilesSortieComponent } from './profiles-sortie/list-apprenant-by-profiles-sortie/list-apprenant-by-profiles-sortie.component';
-import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthentificationInterceptor } from './_helpers/authentification.interceptor';
 
 @NgModule({
@@ -100,6 +100,7 @@ import { AuthentificationInterceptor } from './_helpers/authentification.interce
     RouterModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
 
   ],
   providers: [{provide: HTTP_INTERCEPTORS, useClass: AuthentificationInterceptor, multi: true}],

@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
 
   onLogin(): void {
     if (this.LoginForm.invalid){
-      return;
+      return ;
     }
     this.authService.login(this.LoginForm.value)
       .subscribe(
@@ -44,19 +44,19 @@ export class LoginComponent implements OnInit {
 
           // tslint:disable-next-line: triple-equals
           if (decodeToken.roles[0] == 'ROLE_ADMIN'){
-            this.router.navigateByUrl('/admins');
+            this.router.navigateByUrl('/home');
           }
           // tslint:disable-next-line: triple-equals
           if (decodeToken.roles[0] == 'ROLE_FORMATEUR'){
-            this.router.navigateByUrl('/formateurs');
+            this.router.navigateByUrl('/home/formateurs');
           }
           // tslint:disable-next-line: triple-equals
           if (decodeToken.roles[0] == 'ROLE_CM') {
-            this.router.navigateByUrl('/cms');
+            this.router.navigateByUrl('/home/cms');
           }
           // tslint:disable-next-line: triple-equals
           if (decodeToken.roles[0] == 'ROLE_APPRENANT') {
-            this.router.navigateByUrl('/apprenants');
+            this.router.navigateByUrl('/home/apprenants');
           }
         },
         (err) => {

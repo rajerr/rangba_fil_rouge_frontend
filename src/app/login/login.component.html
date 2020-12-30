@@ -9,13 +9,13 @@
                 <fieldset>
                   <legend class="text-center mb-4">Login</legend>
                   <div class="form-group ml-4 mt-4 mr-4">
-                    <label for="exampleInputusername1">Username </label>
-                    <input type="username" class="form-control" id="exampleInputusername1" aria-describedby="usernameHelp" [(ngModel)]="username" placeholder="Enter username">
+                    <label for="username">Username </label>
+                    <input type="username" class="form-control" id="username" formControlName="username" [(ngModel)]="username" required placeholder="Enter username">
                     <small id="usernameHelp" class="form-text text-muted"></small>
                   </div>
                   <div class="form-group  ml-4 mt-4 mr-4">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" [(ngModel)]="password" placeholder="Password">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" formControlName="password" [(ngModel)]="password" required placeholder=" Enter Password">
                   </div>
                   <fieldset class="form-group  ml-4 mt-4 mr-4">
                     <div class="form-check disabled">
