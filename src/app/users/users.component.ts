@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { UsersService } from './../services/users.service';
 import { Component, OnInit } from '@angular/core';
 import { AuthentificationService } from '../services/authentification.service';
@@ -9,16 +10,24 @@ import { AuthentificationService } from '../services/authentification.service';
 })
 export class UsersComponent implements OnInit {
 
-  private users: any
+  private users: any = [];
   constructor(
     private usersService: UsersService,
-    private authService: AuthentificationService
+    private authService: AuthentificationService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
     
-    this.users = this.usersService.allUsers();
-    console.log(this.users);
+    if (this.authService.isLogin())
+    {
+      this.usersService.allUsers().subscribe((users) =>{
+      console.log(users);
+      this.users = users;
+      });
+    }else{
+      this.router.navigate(['/']);
+    }
     
   }
 

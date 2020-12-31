@@ -1,0 +1,27 @@
+-------------------- Auto-Git Log --------------------
+		Thu Dec 31 2020 09:59:59 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/admins/list-admin/list-admin.component.css
+* src/app/admins/list-admin/list-admin.component.html
+* src/app/app-routing.module.ts
+* src/app/app.module.ts
+* src/app/cms/cms.component.css
+* src/app/cms/list-cm/list-cm.component.css
+* src/app/cms/list-cm/list-cm.component.html
+* src/app/footer/footer.component.css
+* src/app/formateurs/list-formateur/list-formateur.component.css
+* src/app/formateurs/list-formateur/list-formateur.component.html
+* src/app/home/home.component.css
+* src/app/users/users.component.ts
+
+
+Created files:
+* .autogit/logs/log-31-11-2020-9-29-52.txt
+
+
+Deleted files:
+
+
+Renamed files:

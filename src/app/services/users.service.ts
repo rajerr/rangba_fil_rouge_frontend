@@ -18,4 +18,15 @@ export class UsersService {
     return this.http.get(`${environment.url}/admin/users`);
   }
 
+  allApprenants(): Observable <any> {
+    return this.http.get(`${environment.url}/admin/apprenants`);
+  }
+
+  allCms():Observable <any> {
+    return this.http.get(`${environment.url}/admin/cms`);
+  }
+
+  allFormateurs():Observable <any> {
+    return this.http.get(`${environment.url}/admin/formateurs`);
+  }
 }
