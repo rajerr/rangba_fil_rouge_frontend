@@ -10,7 +10,7 @@ import { AuthentificationService } from 'src/app/services/authentification.servi
 })
 export class ListCmComponent implements OnInit {
 
-  private cms:any = [];
+   cms:any = [];
 
   constructor(
     private authService: AuthentificationService, 

@@ -10,7 +10,7 @@ import { AuthentificationService } from 'src/app/services/authentification.servi
 })
 export class ListFormateurComponent implements OnInit {
 
-  private formateurs: any = [];
+   formateurs: any = [];
   constructor(
     private authService: AuthentificationService,
     private usersService: UsersService, 
