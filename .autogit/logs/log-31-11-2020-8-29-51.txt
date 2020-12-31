@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Thu Dec 31 2020 08:29:51 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+
+
+Created files:
+* .autogit/logs/log-31-11-2020-7-35-18.txt
+* src/app/services/users.service.spec.ts
+* src/app/services/users.service.ts
+
+
+Deleted files:
+
+
+Renamed files:
