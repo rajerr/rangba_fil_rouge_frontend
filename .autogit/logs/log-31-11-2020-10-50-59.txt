@@ -1,0 +1,20 @@
+-------------------- Auto-Git Log --------------------
+		Thu Dec 31 2020 10:50:59 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/apprenants/list-apprenant/list-apprenant.component.ts
+* src/app/cms/list-cm/list-cm.component.ts
+* src/app/formateurs/list-formateur/list-formateur.component.ts
+* src/app/services/users.service.ts
+* src/app/users/users.component.ts
+
+
+Created files:
+* .autogit/logs/log-31-11-2020-9-59-59.txt
+
+
+Deleted files:
+
+
+Renamed files:

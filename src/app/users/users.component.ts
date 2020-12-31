@@ -10,7 +10,7 @@ import { AuthentificationService } from '../services/authentification.service';
 })
 export class UsersComponent implements OnInit {
 
-  private users: any = [];
+   users: any = [];
   constructor(
     private usersService: UsersService,
     private authService: AuthentificationService,

@@ -29,4 +29,8 @@ export class UsersService {
   allFormateurs():Observable <any> {
     return this.http.get(`${environment.url}/admin/formateurs`);
   }
+
+  allAdmins():Observable <any> {
+    return this.http.get(`${environment.url}/admin/admins`)
+  }
 }
