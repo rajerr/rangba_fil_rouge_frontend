@@ -49,6 +49,7 @@ import { ListApprenantByProfilesSortieComponent } from './profiles-sortie/list-a
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthentificationInterceptor } from './_helpers/authentification.interceptor';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -93,6 +94,7 @@ import { AuthentificationInterceptor } from './_helpers/authentification.interce
     EditProfilesSortieComponent,
     AddProfilesSortieComponent,
     ListApprenantByProfilesSortieComponent,
+
   ],
   imports: [
     BrowserModule,

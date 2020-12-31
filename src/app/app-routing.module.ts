@@ -1,3 +1,5 @@
+import { ListFormateurComponent } from './formateurs/list-formateur/list-formateur.component';
+import { ListCmComponent } from './cms/list-cm/list-cm.component';
 import { LoginComponent } from './login/login.component';
 import { ListApprenantByProfilesSortieComponent } from './profiles-sortie/list-apprenant-by-profiles-sortie/list-apprenant-by-profiles-sortie.component';
 import { EditProfilesSortieComponent } from './profiles-sortie/edit-profiles-sortie/edit-profiles-sortie.component';
@@ -35,6 +37,7 @@ import { AddCompetenceComponent } from './competences/add-competence/add-compete
 import { DetailCompetenceComponent } from './competences/detail-competence/detail-competence.component';
 import { AddReferentielComponent } from './referentiels/add-referentiel/add-referentiel.component';
 import { AddProfilesSortieComponent } from './profiles-sortie/add-profiles-sortie/add-profiles-sortie.component';
+import { ListAdminComponent } from './admins/list-admin/list-admin.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'/login', pathMatch:'full'},
@@ -64,9 +67,9 @@ const routes: Routes = [
     {path:'profiles', component:ProfilesComponent,
       children:
       [
-        {path:'list-cms', component:CmsComponent},
-        {path:'list-admins', component:AdminsComponent},
-        {path:'list-formateurs', component:FormateursComponent},
+        {path:'list-cms', component:ListCmComponent},
+        {path:'list-admins', component:ListAdminComponent},
+        {path:'list-formateurs', component:ListFormateurComponent},
         {path:'list-apprenants', component:ListApprenantComponent},
         {path:'add-profile', component:AddProfileComponent},
       ]
