@@ -23,7 +23,7 @@
           </thead>
           <tbody *ngFor="let user of users">
             <tr>
-              <td><label  for=""><img class=" avatar" [src]="'base64_decode;',user.avatar" alt="" srcset=""></label></td>
+              <td><label  for=""><img class=" avatar" [src]="'data:image/;base64,'+user.avatar" alt="" srcset=""></label></td>
               <td>{{user.nom}}</td>  
               <td>{{user.prenom}}</td>
               <td>{{user.email}}</td>

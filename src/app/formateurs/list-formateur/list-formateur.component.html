@@ -6,52 +6,21 @@
             <th scope="col">Nom</th>
             <th scope="col">Prenant</th>
             <th scope="col">Mail</th>
+            <th scope="col">Telephone</th>
             <th scope="col-lg-2">Action</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody *ngFor="let formateur of formateurs">
           <tr>
-            <td><label  for=""><img class=" avatar" src="./assets/img/academy.png" alt="" srcset=""></label></td>
-            <td>Otto</td>  
-            <td>@mdo</td>
-            <td>Mark</td>
+            <td><label  for=""><img class=" avatar" [src]="'data:image/; base64, '+formateur.avatar" alt="" srcset=""></label></td>
+            <td>{{formateur.nom}}</td>  
+            <td>{{formateur.prenom}}</td>
+            <td>{{formateur.email}}</td>
+            <td>{{formateur.telephone}}</td>
             <td>
                 <a class="ml-4" [routerLink]="['/users/1']"><img src="./assets/img/icon/vue.png" alt=""></a>
                 <a class="ml-4" [routerLink]="['/users/1/editer']"><img src="./assets/img/icon/upd.png" alt=""></a>
                 <a class="ml-4" href=""><img src="./assets/img/icon/delete.png" alt=""></a>
-            </td>
-          </tr>
-          <tr>
-            <td><label  for=""><img class=" avatar" src="./assets/img/academy.png" alt="" srcset=""></label></td>
-            <td>Otto</td>  
-            <td>@mdo</td>
-            <td>Mark</td>
-            <td>
-              <a class="ml-4" [routerLink]="['/users/1']"><img src="./assets/img/icon/vue.png" alt=""></a>
-              <a class="ml-4" [routerLink]="['/users/1/editer']"><img src="./assets/img/icon/upd.png" alt=""></a>
-              <a class="ml-4" href=""><img src="./assets/img/icon/delete.png" alt=""></a>
-            </td>
-          </tr>
-          <tr>
-            <td><label  for=""><img class=" avatar" src="./assets/img/academy.png" alt="" srcset=""></label></td>
-            <td>Otto</td>  
-            <td>@mdo</td>
-            <td>Mark</td>
-            <td>
-              <a class="ml-4" [routerLink]="['/users/1']"><img src="./assets/img/icon/vue.png" alt=""></a>
-              <a class="ml-4" [routerLink]="['/users/1/editer']"><img src="./assets/img/icon/upd.png" alt=""></a>
-              <a class="ml-4" href=""><img src="./assets/img/icon/delete.png" alt=""></a>
-            </td>
-          </tr>
-          <tr>
-            <td><label  for=""><img class=" avatar" src="./assets/img/academy.png" alt="" srcset=""></label></td>
-            <td>Otto</td>  
-            <td>@mdo</td>
-            <td>Mark</td>
-            <td>
-              <a class="ml-4" [routerLink]="['/users/1']"><img src="./assets/img/icon/vue.png" alt=""></a>
-              <a class="ml-4" [routerLink]="['/users/1/editer']"><img src="./assets/img/icon/upd.png" alt=""></a>
-              <a class="ml-4" href=""><img src="./assets/img/icon/delete.png" alt=""></a>
             </td>
           </tr>
         </tbody>
