@@ -1,0 +1,15 @@
+-------------------- Auto-Git Log --------------------
+		Thu Dec 31 2020 00:37:23 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+
+
+Created files:
+* .autogit/logs/log-31-11-2020-0-7-18.txt
+
+
+Deleted files:
+
+
+Renamed files:
