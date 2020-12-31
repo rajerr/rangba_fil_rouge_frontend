@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Thu Dec 31 2020 14:39:38 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/profiles-sortie/add-profiles-sortie/add-profiles-sortie.component.html
+* src/app/profiles-sortie/profiles-sortie.component.html
+* src/app/profiles-sortie/profiles-sortie.component.ts
+* src/app/services/profile-sortie.service.ts
+
+
+Created files:
+* .autogit/logs/log-31-11-2020-14-9-37.txt
+
+
+Deleted files:
+
+
+Renamed files:
