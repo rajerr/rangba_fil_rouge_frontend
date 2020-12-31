@@ -22,15 +22,12 @@
             </tr>
           </thead>
           <tbody *ngFor="let user of users">
-            <script>
-              console.log(user)
-            </script>
             <tr>
-              <td><label  for=""><img class=" avatar" src="{{user.avatar}}" alt="" srcset=""></label></td>
+              <td><label  for=""><img class=" avatar" [src]="'base64_decode;',user.avatar" alt="" srcset=""></label></td>
               <td>{{user.nom}}</td>  
               <td>{{user.prenom}}</td>
               <td>{{user.email}}</td>
-              <td>{{user.profile}}</td>
+              <td>{{user.profile.libelle}}</td>
               <td>
                   <a class="ml-4" [routerLink]="['/users/1']"><img src="./assets/img/icon/vue.png" alt=""></a>
                   <a class="ml-4" [routerLink]="['/users/1/editer']"><img src="./assets/img/icon/upd.png" alt=""></a>
