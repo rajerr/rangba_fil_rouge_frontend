@@ -20,9 +20,9 @@ export class ProfilesSortieComponent implements OnInit {
   ngOnInit(): void {
 
     if(this.authService.isLogin()){
-      this.profileSortieService.allProfilesSortie().subscribe((profiles)=>{
-        console.log(profiles);
-        this.profileSortieService = this.profilesSortie;
+      this.profileSortieService.allProfilesSortie().subscribe((profilesSortie)=>{
+        console.log(this.profilesSortie);
+        this.profilesSortie = profilesSortie;
       })
     }else{
       this.router.navigate(['/home']);

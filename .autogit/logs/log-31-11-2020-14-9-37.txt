@@ -1,0 +1,25 @@
+-------------------- Auto-Git Log --------------------
+		Thu Dec 31 2020 14:09:37 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/admins/list-admin/list-admin.component.html
+* src/app/admins/list-admin/list-admin.component.ts
+* src/app/profiles-sortie/profiles-sortie.component.html
+* src/app/profiles-sortie/profiles-sortie.component.ts
+* src/app/profiles/profiles.component.html
+* src/app/profiles/profiles.component.ts
+
+
+Created files:
+* .autogit/logs/log-31-11-2020-13-39-25.txt
+* src/app/services/profile-sortie.service.spec.ts
+* src/app/services/profile-sortie.service.ts
+* src/app/services/profile.service.spec.ts
+* src/app/services/profile.service.ts
+
+
+Deleted files:
+
+
+Renamed files:

@@ -11,10 +11,10 @@ export class ProfileSortieService {
   constructor(private http:HttpClient) { }
 
   addProfileSortie(data: any) {
-    return this.http.post(`${environment.url}/admin/profiles`, data);
+    return this.http.post(`${environment.url}/admin/profileSorties`, data);
   }
 
   allProfilesSortie(): Observable <any> {
-    return this.http.get(`${environment.url}/admin/profiles`);
+    return this.http.get(`${environment.url}/admin/profileSorties`);
   }
 }
