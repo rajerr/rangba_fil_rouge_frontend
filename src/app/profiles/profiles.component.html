@@ -1,7 +1,7 @@
 <router-outlet></router-outlet>
 <div class="row">
   <div class="col-lg mt-5 shadow">
-    <h1 class="display-5 text-center text-light bg-primary">Liste Profiles</h1>
+    <h1 class="display-5 text-center text-light bg-primary">Lister Profiles</h1>
         <a class="btn btn-primary float-right" [routerLink]="['/home/profiles/add-profile']">
           Ajouter <img src="./assets/img/icon/add-user.png" alt="">
         </a>
@@ -9,38 +9,18 @@
           <thead class="bg-warning">
             <tr>
               <th scope="col">Libelle</th>
+              <th scope="col">Liste User par Profile</th>
               <th scope="col">Action</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody *ngFor="let profile of profiles">
             <tr>
-              <td>Administrateur</td>
+              <td>{{profile.libelle}}</td>
               <td>
-                  <a class="ml-4" [routerLink]="['/home/profiles/list-admins']">Lister Administer</a>
-                  <a class="ml-4" href=""><img src="./assets/img/icon/upd.png" alt=""></a>
-                  <a class="ml-4" href=""><img src="./assets/img/icon/delete.png" alt=""></a>
+                  <a class="ml-4" [routerLink]="['/home/profiles/list-admins']">Lister {{profile.libelle}}</a>
               </td>
-            </tr>
-            <tr>
-              <td>C. Manager</td>
               <td>
-                  <a class="ml-4" [routerLink]="['/home/profiles/list-cms']">Lister Com. Man.</a>
-                  <a class="ml-4" href=""><img src="./assets/img/icon/upd.png" alt=""></a>
-                  <a class="ml-4" href=""><img src="./assets/img/icon/delete.png" alt=""></a>
-              </td>
-            </tr>
-            <tr>
-              <td>Formateur</td>
-              <td>
-                  <a class="ml-4" [routerLink]="['/home/profiles/list-formateurs']">Lister Formateur</a>
-                  <a class="ml-4" href=""><img src="./assets/img/icon/upd.png" alt=""></a>
-                  <a class="ml-4" href=""><img src="./assets/img/icon/delete.png" alt=""></a>
-              </td>
-            </tr>
-            <tr>
-              <td>Apprenant</td>
-              <td>
-                  <a class="ml-4" [routerLink]="['/home/profiles/list-apprenants']">Lister Apprenant</a>
+                  
                   <a class="ml-4" href=""><img src="./assets/img/icon/upd.png" alt=""></a>
                   <a class="ml-4" href=""><img src="./assets/img/icon/delete.png" alt=""></a>
               </td>

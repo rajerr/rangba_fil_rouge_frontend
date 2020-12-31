@@ -10,7 +10,7 @@ import { AuthentificationService } from 'src/app/services/authentification.servi
 })
 export class ListAdminComponent implements OnInit {
 
-  private admins: any = [];
+   admins: any = [];
   constructor(
     private usersService: UsersService,
     private authService: AuthentificationService, 

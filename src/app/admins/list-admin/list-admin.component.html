@@ -7,17 +7,16 @@
             <th scope="col">Prenant</th>
             <th scope="col">Telephone</th>
             <th scope="col">Mail</th>
-            <th scope="col">Statut</th>
             <th scope="col-lg-2">Action</th>
           </tr>
         </thead>
         <tbody *ngFor="let admin of admins">
-          <tr>
+          <tr class="text-center">
             <td><label  for=""><img class=" avatar" [src]="'data:image/, base64,'+admin.avatar" alt="" srcset=""></label></td>
             <td>{{admin.nom}}</td>  
             <td>{{admin.prenom}}</td>
+            <td>{{admin.telephone}}</td>
             <td>{{admin.email}}</td>
-            <td>{{admin.statut}}</td>
             <td>
                 <a class="ml-4" [routerLink]="['/users/1']"><img src="./assets/img/icon/vue.png" alt=""></a>
                 <a class="ml-4" [routerLink]="['/users/1/editer']"><img src="./assets/img/icon/upd.png" alt=""></a>

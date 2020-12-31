@@ -12,9 +12,9 @@
               <th scope="col">Action</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody *ngFor="let p of profilesSortie">
             <tr>
-              <td>Developpeur Back</td>
+              <td>{{p.libelle}}</td>
               <td>
                 <a class="ml-4" [routerLink]="['/home/profiles-sortie/apprenants-by-profile-sortie']">Lister Apprenants</a>
                   <a class="ml-4" [routerLink]="['profiles-sortie/1/edit']"><img src="./assets/img/icon/upd.png" alt=""></a>
