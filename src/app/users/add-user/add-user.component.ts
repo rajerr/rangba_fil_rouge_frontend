@@ -13,6 +13,7 @@ export class AddUserComponent implements OnInit {
 
   profiles :any = [];
   registerForm : FormGroup | any;
+  username: string |any;
   nom: string |any;
   prenom: string |any;
   email: string |any;
@@ -39,6 +40,7 @@ export class AddUserComponent implements OnInit {
     })
 
     this.registerForm = new FormGroup({
+      username: new FormControl({ value: '' }, Validators.compose([Validators.required])),
       nom: new FormControl({ value: '' }, Validators.compose([Validators.required])),
       prenom: new FormControl({ value: '' }, Validators.compose([Validators.required])),
       email: new FormControl({ value: '' }, Validators.compose([Validators.required])),
