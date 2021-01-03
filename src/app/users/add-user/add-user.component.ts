@@ -30,6 +30,7 @@ export class AddUserComponent implements OnInit {
     //   profile: ['', Validators.required],
     // })
 
+
     this.registerForm = new FormGroup({
       nom: new FormControl({ value: '' }, Validators.compose([Validators.required])),
       prenom: new FormControl({ value: '' }, Validators.compose([Validators.required])),
