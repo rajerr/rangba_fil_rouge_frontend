@@ -15,13 +15,13 @@
             <tr>
               <th scope="col">Avatar</th>
               <th scope="col">Nom</th>
-              <th scope="col">Prenant</th>
-              <th scope="col">Mail</th>
+              <th scope="col">Prenom</th>
+              <th scope="col">Email</th>
               <th scope="col">Profil</th>
               <th scope="col">Action</th>
             </tr>
           </thead>
-          <tbody *ngFor="let user of users">
+          <tbody *ngFor="let user of users" class="text-center">
             <tr>
               <td><label  for=""><img class=" avatar" src="{{'data:image/jpg;base64,'+user.avatar}}" alt="" srcset=""></label></td>
               <td>{{user.nom}}</td>  
