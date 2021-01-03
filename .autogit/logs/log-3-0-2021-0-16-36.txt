@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Sun Jan 03 2021 00:16:36 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/found/found.component.html
+* src/app/profiles/profiles.component.html
+
+
+Created files:
+* .autogit/logs/log-2-0-2021-19-12-55.txt
+
+
+Deleted files:
+
+
+Renamed files:
