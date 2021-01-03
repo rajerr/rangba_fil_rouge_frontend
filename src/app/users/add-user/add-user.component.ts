@@ -11,6 +11,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddUserComponent implements OnInit {
 
+  profiles :any = [];
   registerForm : FormGroup | any;
   nom: string |any;
   prenom: string |any;
@@ -32,6 +33,10 @@ export class AddUserComponent implements OnInit {
     //   profile: ['', Validators.required],
     // })
 
+    this.profiles = this.profileService.allProfiles().subscribe((profiles)=>{
+      console.log(profiles);
+      this.profiles = profiles;
+    })
 
     this.registerForm = new FormGroup({
       nom: new FormControl({ value: '' }, Validators.compose([Validators.required])),
@@ -43,6 +48,7 @@ export class AddUserComponent implements OnInit {
 
 
   onSubmit(){
+
     if (this.registerForm.invalid) {
       return this.registerForm.value;
     }
