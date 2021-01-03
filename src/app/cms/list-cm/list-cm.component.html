@@ -12,7 +12,7 @@
         </thead>
         <tbody *ngFor="let cm of cms">
           <tr>
-            <td><label  for=""><img class=" avatar" [src]="'data:image/; base64,'+cm.avatar" alt="" srcset=""></label></td>
+            <td><label  for=""><img class=" avatar" src="{{'data:image/jpg;base64,'+cm.avatar}}" alt="" srcset=""></label></td>
             <td>{{cm.nom}}</td>  
             <td>{{cm.prenom}}</td>
             <td>{{cm.telephone}}</td>

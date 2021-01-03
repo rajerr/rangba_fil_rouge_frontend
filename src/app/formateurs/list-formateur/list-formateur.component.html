@@ -12,7 +12,7 @@
         </thead>
         <tbody *ngFor="let formateur of formateurs">
           <tr>
-            <td><label  for=""><img class=" avatar" [src]="'data:image/; base64, '+formateur.avatar" alt="" srcset=""></label></td>
+            <td><label  for=""><img class=" avatar" src="{{'data:image/jpg;base64,'+formateur.avatar}}" alt="" srcset=""></label></td>
             <td>{{formateur.nom}}</td>  
             <td>{{formateur.prenom}}</td>
             <td>{{formateur.email}}</td>

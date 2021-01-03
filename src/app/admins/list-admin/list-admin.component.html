@@ -12,7 +12,7 @@
         </thead>
         <tbody *ngFor="let admin of admins">
           <tr class="text-center">
-            <td><label  for=""><img class=" avatar" [src]="'data:image/, base64,'+admin.avatar" alt="" srcset=""></label></td>
+            <td><label  for=""><img class=" avatar" src="{{'data:image/jpg;base64,'+admin.avatar}}" alt="" srcset=""></label></td>
             <td>{{admin.nom}}</td>  
             <td>{{admin.prenom}}</td>
             <td>{{admin.telephone}}</td>
