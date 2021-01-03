@@ -1,4 +1,4 @@
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 import { UsersService } from './../../services/users.service';
 import { Component, OnInit } from '@angular/core';
@@ -23,12 +23,19 @@ export class AddUserComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.registerForm = this.formBuilder.group({
-      nom: ['', Validators.required],
-      prenom: ['', Validators.required],
-      email: ['', Validators.required],
-      profile: ['', Validators.required],
-    })
+    // this.registerForm = this.formBuilder.group({
+    //   nom: ['', Validators.required],
+    //   prenom: ['', Validators.required],
+    //   email: ['', Validators.required],
+    //   profile: ['', Validators.required],
+    // })
+
+    this.registerForm = new FormGroup({
+      nom: new FormControl({ value: '' }, Validators.compose([Validators.required])),
+      prenom: new FormControl({ value: '' }, Validators.compose([Validators.required])),
+      email: new FormControl({ value: '' }, Validators.compose([Validators.required])),
+      profile: new FormControl({ value: '' }, Validators.compose([Validators.required]))
+    });
   }
 
 
