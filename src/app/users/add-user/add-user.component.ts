@@ -1,3 +1,4 @@
+import { ProfileService } from './../../services/profile.service';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 import { UsersService } from './../../services/users.service';
@@ -20,6 +21,7 @@ export class AddUserComponent implements OnInit {
     private usersService: UsersService,
     private router : Router,
     private formBuilder: FormBuilder,
+    private profileService: ProfileService,
   ) { }
 
   ngOnInit(): void {
@@ -46,7 +48,7 @@ export class AddUserComponent implements OnInit {
     }
 
     console.log(this.registerForm.value)
-    this.usersService.addUsers(this.registerForm.value).subscribe((user)=>{
+    this.usersService.addAdmin(this.registerForm.value).subscribe((user)=>{
       this.registerForm.reset();
       this.router.navigateByUrl('/home/users');
     })
