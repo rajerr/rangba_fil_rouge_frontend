@@ -1,0 +1,21 @@
+-------------------- Auto-Git Log --------------------
+		Sun Jan 03 2021 09:38:16 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/admins/list-admin/list-admin.component.html
+* src/app/apprenants/list-apprenant/list-apprenant.component.html
+* src/app/cms/list-cm/list-cm.component.html
+* src/app/formateurs/list-formateur/list-formateur.component.html
+* src/app/profiles/profiles.component.html
+* src/app/users/profile-user/profile-user.component.ts
+
+
+Created files:
+* .autogit/logs/log-3-0-2021-0-46-43.txt
+
+
+Deleted files:
+
+
+Renamed files:
