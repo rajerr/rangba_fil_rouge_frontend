@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddUserComponent implements OnInit {
 
-  addUserForm : FormGroup | any;
+  registerForm : FormGroup | any;
   nom: string |any;
   prenom: string |any;
   email: string |any;
@@ -22,7 +22,7 @@ export class AddUserComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.addUserForm = this.formBuilder.group({
+    this.registerForm = this.formBuilder.group({
       nom: ['', Validators.required],
       prenom: ['', Validators.required],
       email: ['', Validators.required],
@@ -32,12 +32,15 @@ export class AddUserComponent implements OnInit {
 
 
   onSubmit(){
-    if (this.addUserForm.invalid) {
-      return this.addUserForm.value;
+    if (this.registerForm.invalid) {
+      return this.registerForm.value;
     }
 
-    this.usersService.addUsers(this.addUserForm.value)
-    console.log(this.addUserForm.value)
+    console.log(this.registerForm.value)
+    this.usersService.addAdmin(this.registerForm.value).subscribe((admin)=>{
+      this.registerForm.reset(admin);
+      this.router.navigateByUrl('/home/users');
+    })
   }
 
 }

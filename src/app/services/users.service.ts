@@ -26,11 +26,23 @@ export class UsersService {
     return this.http.get(`${environment.url}/admin/cms`);
   }
 
+  addCm(data: any) {
+    return this.http.post(`${environment.url}/admin/Cms`, data);
+  }
+
   allFormateurs():Observable <any> {
     return this.http.get(`${environment.url}/admin/formateurs`);
   }
 
+  addFormateur(data: any) {
+    return this.http.post(`${environment.url}/admin/formateurs`, data);
+  }
+
   allAdmins():Observable <any> {
     return this.http.get(`${environment.url}/admin/admins`)
+  }
+
+  addAdmin(data: any) {
+    return this.http.post(`${environment.url}/admin/admins`, data);
   }
 }
