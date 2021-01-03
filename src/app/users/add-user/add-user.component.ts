@@ -15,6 +15,7 @@ export class AddUserComponent implements OnInit {
   prenom: string |any;
   email: string |any;
   profile: string |any;
+  avatar: string |any
   constructor(
     private usersService: UsersService,
     private router : Router,
@@ -37,8 +38,8 @@ export class AddUserComponent implements OnInit {
     }
 
     console.log(this.registerForm.value)
-    this.usersService.addAdmin(this.registerForm.value).subscribe((admin)=>{
-      this.registerForm.reset(admin);
+    this.usersService.addUsers(this.registerForm.value).subscribe((user)=>{
+      this.registerForm.reset();
       this.router.navigateByUrl('/home/users');
     })
   }

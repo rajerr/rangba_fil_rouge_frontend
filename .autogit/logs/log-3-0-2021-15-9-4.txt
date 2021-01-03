@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Sun Jan 03 2021 15:09:04 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/services/users.service.ts
+* src/app/users/add-user/add-user.component.html
+* src/app/users/add-user/add-user.component.ts
+
+
+Created files:
+* .autogit/logs/log-3-0-2021-14-38-59.txt
+
+
+Deleted files:
+
+
+Renamed files:
