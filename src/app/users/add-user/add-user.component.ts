@@ -1,3 +1,5 @@
+import { Router } from '@angular/router';
+import { UsersService } from './../../services/users.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddUserComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private usersService: UsersService,
+    private router : Router,
+  ) { }
 
   ngOnInit(): void {
   }
