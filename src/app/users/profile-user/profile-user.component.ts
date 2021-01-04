@@ -9,7 +9,7 @@ import { JwtHelperService } from '@auth0/angular-jwt';
   styleUrls: ['./profile-user.component.css']
 })
 export class ProfileUserComponent implements OnInit {
-
+user : any = []
   constructor(
     private authService: AuthentificationService,
     private router: Router
@@ -18,8 +18,8 @@ export class ProfileUserComponent implements OnInit {
  
   ngOnInit(): void {
     if (this.authService.isLogin()) {
-      const  currentUser = localStorage.getItem('currentUser');
-      console.log(currentUser);
+      this.user = this.authService.getAuthorizationToken()
+      console.log(this.user);
     } 
   }
  }
