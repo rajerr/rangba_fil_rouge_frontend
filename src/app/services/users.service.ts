@@ -1,4 +1,3 @@
-import { User } from './../users/user';
 import { Observable } from 'rxjs';
 import { environment } from './../../environments/environment';
 import { HttpClient } from '@angular/common/http';
@@ -13,8 +12,8 @@ export class UsersService {
 
   
 
-  addUsers(user: User) {
-    return this.http.post(`${environment.url}/admin/users`, user);
+  addUsers(data: any) {
+    return this.http.post(`${environment.url}/admin/users`, data);
   }
 
   allUsers(): Observable <any> {
@@ -29,23 +28,23 @@ export class UsersService {
     return this.http.get(`${environment.url}/admin/cms`);
   }
 
-  addCm(user: User) {
-    return this.http.post(`${environment.url}/admin/Cms`, user);
+  addCm(data: any) {
+    return this.http.post(`${environment.url}/admin/Cms`, data);
   }
 
   allFormateurs():Observable <any> {
     return this.http.get(`${environment.url}/admin/formateurs`);
   }
 
-  addFormateur(user: User) {
-    return this.http.post(`${environment.url}/admin/formateurs`, user);
+  addFormateur(data: any) {
+    return this.http.post(`${environment.url}/admin/formateurs`, data);
   }
 
   allAdmins():Observable <any> {
     return this.http.get(`${environment.url}/admin/admins`)
   }
 
-  addAdmin(user: User) {
-    return this.http.post(`${environment.url}/admin/admins`, user);
+  addAdmin(data: any) {
+    return this.http.post(`${environment.url}/admin/admins`, data);
   }
 }

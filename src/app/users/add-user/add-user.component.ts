@@ -49,15 +49,26 @@ export class AddUserComponent implements OnInit {
     });
   }
 
-
+  select(event: any){
+   this.avatar = event.target.files[0];
+  }
   onSubmit(){
 
     if (this.registerForm.invalid) {
       return this.registerForm.value;
     }
-
+ 
+    const formData = new FormData;
+    formData.append('username', this.registerForm.value.username);
+    formData.append('nom', this.registerForm.value.nom);
+    formData.append('prenom', this.registerForm.value.prenom);
+    formData.append('email', this.registerForm.value.email);
+    formData.append('profile', this.registerForm.value.profile);
+    formData.append('avatar', this.registerForm.value.avatar);
     console.log(this.registerForm.value)
-    this.usersService.addAdmin(this.registerForm.value).subscribe((admin)=>{
+
+    console.log(this.registerForm.value.profile);
+    this.usersService.addFormateur(formData).subscribe((formateur)=>{
       this.registerForm.reset();
       this.router.navigateByUrl('/home/users');
     })
