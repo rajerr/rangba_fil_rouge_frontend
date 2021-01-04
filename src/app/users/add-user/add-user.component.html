@@ -46,8 +46,10 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="form-group">
-                        <img class="ml-5 rounded-circle avatar" src="./assets/img/avatar.png" alt="">
-                        <input type="file" class="form-control " (change)="select($event)" id="" aria-describedby="avatar" formControlName="avatar" [(ngModel)]="avatar">    
+                        <div class="image-preview mb-3" *ngIf="previewUrl">
+                            <img class="ml-5 rounded-circle avatar" [src]="previewUrl" alt="">
+                        </div>
+                        <input type="file" class="form-control" accept="image/*" (change)="select($event)" id="" aria-describedby="avatar" formControlName="avatar" [(ngModel)]="avatar">    
                     </div>
                     <div class="col-lg-6">
                         <button type="submit" class="btn btn-primary ml-5">SOUMETTRE</button>
