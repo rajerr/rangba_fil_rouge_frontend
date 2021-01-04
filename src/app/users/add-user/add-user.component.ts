@@ -19,6 +19,7 @@ export class AddUserComponent implements OnInit {
   email: string |any;
   profile: string |any;
   avatar: string |any
+  
   constructor(
     private usersService: UsersService,
     private router : Router,
