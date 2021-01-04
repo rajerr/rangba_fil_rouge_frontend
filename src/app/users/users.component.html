@@ -1,6 +1,6 @@
 <router-outlet></router-outlet>
 <div class="row mt-5 shadow p-2">
-    <div class="col-lg host">
+    <div class="col-lg host" (scroll)="onScroll($event)">
       <div class="form-group col-lg-4 float-right">
         <input id="search" class="form-control float-right mt-1" type="text" placeholder="tapez votre recherche ici" name="search">
       </div>
