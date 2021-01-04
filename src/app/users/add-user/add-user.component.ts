@@ -19,6 +19,7 @@ export class AddUserComponent implements OnInit {
   email: string |any;
   profile: string |any;
   avatar: string |any
+  user: any =[];
   
   constructor(
     private usersService: UsersService,
@@ -67,11 +68,26 @@ export class AddUserComponent implements OnInit {
     formData.append('avatar', this.registerForm.value.avatar);
     console.log(this.registerForm.value)
 
-    console.log(this.registerForm.value.profile);
-    this.usersService.addFormateur(formData).subscribe((formateur)=>{
+    if (this.registerForm.value.profile == "ADMIN") {
+      this.usersService.addAdmin(formData).subscribe((admin)=>{
+        console.log(admin);
+       return this.user = admin;
+      })
+    }
+    if (this.registerForm.value.profile == "FORMATEUR") {
+      this.usersService.addFormateur(formData).subscribe((formateur)=>{
+        console.log(formateur);
+        return this.user = formateur;
+      })
+    }
+    if (this.registerForm.value.profile == "CM") {
+      this.usersService.addCm(formData).subscribe((cm)=>{
+        console.log(cm);
+        return this.user == cm;
+      })
+    }
       this.registerForm.reset();
       this.router.navigateByUrl('/home/users');
-    })
   }
 
 }
