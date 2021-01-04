@@ -55,9 +55,15 @@ export class AddUserComponent implements OnInit {
   }
 
   select(event: any){
-   this.avatar = event.target.files[0];
-    console.log(event.target.files[0]);
+    if (event.target.files.length > 0)
+    {
+        this.avatar = event.target.files[0];
+        this.registerForm.controls['avatar'].setValue(this.avatar);
+        this.registerForm.content = event.target.files[0];
+        console.log(event.target.files[0]);
+    }
   }
+
   onSubmit(){
 
     if (this.registerForm.invalid) {

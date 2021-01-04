@@ -29,7 +29,7 @@ export class UsersService {
   }
 
   addCm(data: any) {
-    return this.http.post(`${environment.url}/admin/Cms`, data);
+    return this.http.post(`${environment.url}/admin/cms`, data);
   }
 
   allFormateurs():Observable <any> {
