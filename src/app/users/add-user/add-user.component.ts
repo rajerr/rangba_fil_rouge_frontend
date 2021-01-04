@@ -19,11 +19,10 @@ export class AddUserComponent implements OnInit {
   prenom: string |any;
   email: string |any;
   profile: Profile |any;
+  avatar: string |any
   telephone: string |any
   user: any =[];
-  avatar: File |any = null;
-  previewUrl:any = null;
-
+  
   constructor(
     private usersService: UsersService,
     private router : Router,
@@ -57,25 +56,8 @@ export class AddUserComponent implements OnInit {
 
   select(event: any){
    this.avatar = event.target.files[0];
-  //  console.log(event.target.files[0]);
+    console.log(event.target.files[0]);
   }
-
-
-  preview() {
-    // Show preview 
-    var mimeType = this.avatar.type;
-    if (mimeType.match(/image\/*/) == null) {
-      return;
-    }
- 
-    var reader = new FileReader();      
-    reader.readAsDataURL(this.avatar); 
-    reader.onload = (_event) => { 
-      this.previewUrl = reader.result; 
-    }
-}
-
-
   onSubmit(){
 
     if (this.registerForm.invalid) {
@@ -83,6 +65,7 @@ export class AddUserComponent implements OnInit {
     }
  
     const formData = new FormData;
+    // console.log(this.registerForm.value.avatar);
     formData.append('username', this.registerForm.value.username);
     formData.append('nom', this.registerForm.value.nom);
     formData.append('prenom', this.registerForm.value.prenom);
