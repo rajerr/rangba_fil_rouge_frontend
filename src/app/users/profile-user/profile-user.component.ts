@@ -17,12 +17,14 @@ export class ProfileUserComponent implements OnInit {
   user :any = [];
   ngOnInit(): void {
     if (this.authService.isLogin()) {
-      this.authService.allUsers().subscribe((user)=>{
-        console.log(user);
-        this.user = user;
-      });
-    } else {
-      this.router.navigate(['/home'])
+      this.user = localStorage.getItem('currentUser')
+      console.log(this.user);
+    //   this.authService.allUsers().subscribe((user)=>{
+    //     console.log(user);
+    //     this.users = user;
+    //   });
+    // } else {
+    //   this.router.navigate(['/home'])
     }
     }
   }
