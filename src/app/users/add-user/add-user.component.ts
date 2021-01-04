@@ -52,6 +52,7 @@ export class AddUserComponent implements OnInit {
 
   select(event: any){
    this.avatar = event.target.files[0];
+   console.log(event.target.files[0]);
   }
   onSubmit(){
 
