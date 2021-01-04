@@ -1,6 +1,7 @@
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { AuthentificationService } from 'src/app/services/authentification.service';
+import { JwtHelperService } from '@auth0/angular-jwt';
 
 @Component({
   selector: 'app-profile-user',
@@ -14,17 +15,11 @@ export class ProfileUserComponent implements OnInit {
     private router: Router
         ){ }
 
-  user :any = [];
+ 
   ngOnInit(): void {
     if (this.authService.isLogin()) {
-      this.user = localStorage.getItem('currentUser')
-      console.log(this.user);
-    //   this.authService.allUsers().subscribe((user)=>{
-    //     console.log(user);
-    //     this.users = user;
-    //   });
-    // } else {
-    //   this.router.navigate(['/home'])
-    }
-    }
+      const  currentUser = localStorage.getItem('currentUser');
+      console.log(currentUser);
+    } 
   }
+ }

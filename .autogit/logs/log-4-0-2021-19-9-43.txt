@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Mon Jan 04 2021 19:09:43 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/users/profile-user/profile-user.component.ts
+
+
+Created files:
+* .autogit/logs/log-4-0-2021-18-39-37.txt
+
+
+Deleted files:
+
+
+Renamed files:
