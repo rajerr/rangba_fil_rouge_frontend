@@ -10,6 +10,8 @@ export class UsersService {
 
   constructor(private http:HttpClient) { }
 
+  
+
   addUsers(data: any) {
     return this.http.post(`${environment.url}/admin/users`, data);
   }

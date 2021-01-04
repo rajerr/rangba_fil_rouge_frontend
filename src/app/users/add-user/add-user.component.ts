@@ -56,7 +56,7 @@ export class AddUserComponent implements OnInit {
     }
 
     console.log(this.registerForm.value)
-    this.usersService.addAdmin(this.registerForm.value).subscribe((user)=>{
+    this.usersService.addAdmin(this.registerForm.value).subscribe((admin)=>{
       this.registerForm.reset();
       this.router.navigateByUrl('/home/users');
     })

@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Mon Jan 04 2021 08:15:15 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/profiles-sortie/profiles-sortie.component.html
+* src/app/users/users.component.html
+* src/app/users/users.component.ts
+
+
+Created files:
+* .autogit/logs/log-3-0-2021-23-48-57.txt
+
+
+Deleted files:
+
+
+Renamed files:
