@@ -1,0 +1,20 @@
+-------------------- Auto-Git Log --------------------
+		Wed Jan 06 2021 03:38:32 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* src/app/app.module.ts
+* src/app/groupe-competences/groupe-competences.component.html
+* src/app/groupe-competences/groupe-competences.component.ts
+
+
+Created files:
+* .autogit/logs/log-6-0-2021-3-8-26.txt
+* src/app/summarize.pipe.spec.ts
+* src/app/summarize.pipe.ts
+
+
+Deleted files:
+
+
+Renamed files:
