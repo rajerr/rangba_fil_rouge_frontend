@@ -20,8 +20,8 @@
                   Ajouter Competence<img src="./assets/img/icon/add-user.png" alt="">
               </a> -->
                   <router-outlet></router-outlet>
-                 <select id = "competence" class="form-control" multiple = "multiple"  formControlName="competence" [(ngModel)]="competence"> 
-                   <option *ngFor="let c of competences" > {{c.libelle}} </option> 
+                 <select id = "competences" class="form-control" multiple = "multiple"  formControlName="competences" [(ngModel)]="competences"> 
+                   <option value="/api/competences/{{c.id}}" *ngFor="let c of cptences" > {{c.libelle}} </option> 
                  </select>               
               </div>
               <div class="row">
