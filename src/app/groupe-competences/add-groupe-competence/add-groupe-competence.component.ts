@@ -1,4 +1,7 @@
-import { FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
+import { GroupeCompetencesService } from './../../services/groupe-competences.service';
+import { CompetencesService } from './../../services/competences.service';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -11,11 +14,26 @@ export class AddGroupeCompetenceComponent implements OnInit {
   addGrouprCompetenceForm : FormGroup |any;
   libelle: string|any;
   descriptif: string|any;
+  competences: any = [];
   competence: any = [];
   
-  constructor() { }
+  constructor(
+    private competenceService: CompetencesService,
+    private groupeCompetences: GroupeCompetencesService,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
+    this.competences = this.competenceService.allCompetences().subscribe((competences)=>{
+      console.log(competences);
+      this.competences = competences;
+    })
+
+    this.addGrouprCompetenceForm = new FormGroup({
+      libelle: new FormControl({ value: '' }, Validators.compose([Validators.required])),
+      descriptif: new FormControl({ value: '' }, Validators.compose([Validators.required])),
+      competence: new FormControl({ value: '' }, Validators.compose([Validators.required])),
+    });
   }
 
   onSubmit(){

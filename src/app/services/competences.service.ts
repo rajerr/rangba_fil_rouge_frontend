@@ -6,19 +6,18 @@ import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class GroupeCompetencesService {
+export class CompetencesService {
 
   constructor(
     private http: HttpClient
   ) { }
-  
 
-  addGroupeCompetences(data: any) {
-    return this.http.post(`${environment.url}/admin/groupecompetences`, data);
+  addCompetences(data: any) {
+    return this.http.post(`${environment.url}/competences`, data);
   }
 
-  allGroupeCompetences(): Observable <any> {
-    return this.http.get(`${environment.url}/admin/groupecompetences`);
+  allCompetences(): Observable <any> {
+    return this.http.get(`${environment.url}/competences`);
   }
 
 }

@@ -31,12 +31,6 @@ export class AddUserComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    // this.registerForm = this.formBuilder.group({
-    //   nom: ['', Validators.required],
-    //   prenom: ['', Validators.required],
-    //   email: ['', Validators.required],
-    //   profile: ['', Validators.required],
-    // })
 
     this.profiles = this.profileService.allProfiles().subscribe((profiles)=>{
       console.log(profiles);

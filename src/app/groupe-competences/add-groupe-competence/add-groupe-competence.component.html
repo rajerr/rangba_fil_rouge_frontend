@@ -21,11 +21,7 @@
               </a> -->
                   <router-outlet></router-outlet>
                  <select id = "competence" class="form-control" multiple = "multiple"  formControlName="competence" [(ngModel)]="competence"> 
-                   <option value = "Option one" > Option 1 </option> 
-                   <option value = "Option six" > Option six </option>
-                   <option value = "Option two" > Option deux </option> 
-                   <option value = "Option trois " > Option trois </option> 
-                   <option value = "Option quatre " > Option quatre </option> 
+                   <option *ngFor="let c of competences" > {{c.libelle}} </option> 
                  </select>               
               </div>
               <div class="row">
