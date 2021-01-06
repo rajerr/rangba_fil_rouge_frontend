@@ -48,6 +48,7 @@ import { AddProfilesSortieComponent } from './profiles-sortie/add-profiles-sorti
 import { ListApprenantByProfilesSortieComponent } from './profiles-sortie/list-apprenant-by-profiles-sortie/list-apprenant-by-profiles-sortie.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthentificationInterceptor } from './_helpers/authentification.interceptor';
+import { SummarizePipe } from './summarize.pipe';
 
 
 @NgModule({
@@ -94,6 +95,7 @@ import { AuthentificationInterceptor } from './_helpers/authentification.interce
     EditProfilesSortieComponent,
     AddProfilesSortieComponent,
     ListApprenantByProfilesSortieComponent,
+    SummarizePipe,
 
   ],
   imports: [
