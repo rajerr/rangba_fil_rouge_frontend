@@ -19,7 +19,7 @@ export class GroupeCompetencesComponent implements OnInit {
 
   ngOnInit(): void {
     this.groupeCompetences = this.groupeCompetenceService.allGroupeCompetences().subscribe((groupeCompetences)=>{
-      console.log(this.groupeCompetenceService.allGroupeCompetences()) ;
+      console.log(groupeCompetences) ;
       this.groupeCompetences = groupeCompetences;
     })
   }
