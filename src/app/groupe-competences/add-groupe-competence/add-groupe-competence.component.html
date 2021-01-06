@@ -21,7 +21,7 @@
               </a> -->
                   <router-outlet></router-outlet>
                  <select id = "competences" class="form-control" multiple = "multiple"  formControlName="competences" [(ngModel)]="competences"> 
-                   <option value="/api/competences/{{c.id}}" *ngFor="let c of cptences" > {{c.libelle}} </option> 
+                   <option class="col-lg-3" value="/api/competences/{{c.id}}" *ngFor="let c of cptences" > {{c.libelle}} </option> 
                  </select>               
               </div>
               <div class="row">
