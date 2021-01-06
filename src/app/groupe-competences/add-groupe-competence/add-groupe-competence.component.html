@@ -2,29 +2,25 @@
     <div class="jumbotron shadow p-3 mt-5">
         <h1 class="display-5 text-center bg-warning">Création d'un Groupe de Competence</h1>
         <hr class="my-4">
-        <form>
+        <form [formGroup]="addGrouprCompetenceForm" (ngSubmit)="onSubmit()">
             <fieldset>
               <div class="form-group">
-                <label for="InputTitre">Libelle</label>
-                <input type="text" class="form-control " id="" aria-describedby="titre" 
+                <label for="libelle">Libelle</label>
+                <input type="text" class="form-control " id="" aria-describedby="libelle" formControlName="libelle" [(ngModel)]="libelle"
                         placeholder="choisir le titre le plus claire, le plus pro et le plus acchocheur possible">
               </div>
               <div class="form-group">
-                <label for="Textdescription">Descriptif</label>
-                <textarea class="form-control" id="exampleTextarea" rows="3" 
+                <label for="descriptif">Descriptif</label>
+                <textarea class="form-control" id="descriptif" rows="3" formControlName="descriptif" [(ngModel)]="descriptif"
                           placeholder="Donnez le descriptif"></textarea>
               </div>
               <div class="form-group">
                 <label for="Textdescription">Competences</label>
-                <a class="form-control col-lg-3 btn btn-primary float-right" [routerLink]="['/home/groupes-competences/add-groupe-competences/add-competence']">
+                <!-- <a class="form-control col-lg-3 btn btn-primary float-right" [routerLink]="['/home/groupes-competences/add-groupe-competences/add-competence']">
                   Ajouter Competence<img src="./assets/img/icon/add-user.png" alt="">
-              </a>
-              <router-outlet></router-outlet>
-                <!-- <textarea class="form-control mt-3" id="exampleTextarea" rows="3" 
-                          placeholder="Ajouter les competences">
-                </textarea>
-                 -->
-                 <select id = "mySelect" class="form-control" multiple = "multiple" > 
+              </a> -->
+                  <router-outlet></router-outlet>
+                 <select id = "competence" class="form-control" multiple = "multiple"  formControlName="competence" [(ngModel)]="competence"> 
                    <option value = "Option one" > Option 1 </option> 
                    <option value = "Option six" > Option six </option>
                    <option value = "Option two" > Option deux </option> 

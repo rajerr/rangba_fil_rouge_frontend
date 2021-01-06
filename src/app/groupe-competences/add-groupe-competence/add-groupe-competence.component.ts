@@ -1,3 +1,4 @@
+import { FormGroup } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddGroupeCompetenceComponent implements OnInit {
 
+  addGrouprCompetenceForm : FormGroup |any;
+  libelle: string|any;
+  descriptif: string|any;
+  competence: any = [];
+  
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onSubmit(){
+    console.log(this.addGrouprCompetenceForm.value);
+    console.log("ok");
+  }
 }
