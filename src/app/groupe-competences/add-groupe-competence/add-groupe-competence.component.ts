@@ -1,8 +1,9 @@
 import { Router } from '@angular/router';
 import { GroupeCompetencesService } from './../../services/groupe-competences.service';
 import { CompetencesService } from './../../services/competences.service';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
+import { AuthentificationService } from 'src/app/services/authentification.service';
 
 @Component({
   selector: 'app-add-groupe-competence',
@@ -16,10 +17,12 @@ export class AddGroupeCompetenceComponent implements OnInit {
   descriptif: string|any;
   competences: any = [];
   competence: any = [];
+  groupeCompetences: any = [];
   
   constructor(
     private competenceService: CompetencesService,
-    private groupeCompetences: GroupeCompetencesService,
+    private groupeCompetenceService: GroupeCompetencesService,
+    private formBuilder: FormBuilder,
     private router: Router
   ) { }
 
@@ -29,15 +32,23 @@ export class AddGroupeCompetenceComponent implements OnInit {
       this.competences = competences;
     })
 
-    this.addGrouprCompetenceForm = new FormGroup({
-      libelle: new FormControl({ value: '' }, Validators.compose([Validators.required])),
-      descriptif: new FormControl({ value: '' }, Validators.compose([Validators.required])),
-      competence: new FormControl({ value: '' }, Validators.compose([Validators.required])),
+    this.addGrouprCompetenceForm = this.formBuilder.group({
+      libelle: ['', Validators.required],
+      descriptif: ['', Validators.required],
+      competence: ['', Validators.required],
+      statut: [true, Validators.required],
     });
   }
 
   onSubmit(){
-    console.log(this.addGrouprCompetenceForm.value);
-    console.log("ok");
+    console.log(this.addGrouprCompetenceForm);
+
+    if (this.addGrouprCompetenceForm.invalid) {
+      return
+    }
+    this.groupeCompetenceService.addGroupeCompetences(this.addGrouprCompetenceForm.value).subscribe((groupeCompetences)=>{
+      console.log(this.addGrouprCompetenceForm);
+      this.groupeCompetences = groupeCompetences;
+    })
   }
 }
