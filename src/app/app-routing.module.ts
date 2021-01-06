@@ -1,3 +1,4 @@
+import { ListCompetencesComponent } from './competences/list-competences/list-competences.component';
 import { ListFormateurComponent } from './formateurs/list-formateur/list-formateur.component';
 import { ListCmComponent } from './cms/list-cm/list-cm.component';
 import { LoginComponent } from './login/login.component';
@@ -113,6 +114,7 @@ const routes: Routes = [
             {path:'add-competence', component: AddCompetenceComponent},
           ]
         },
+        {path:'competence_list',component: ListCompetencesComponent},
       ]
     },
   

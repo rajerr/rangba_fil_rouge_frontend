@@ -13,8 +13,10 @@
                 <div class="card-header">{{gc.libelle | summarize: 10}}} <a class="float-right" href=""><img src="./assets/img/icon/upd.png" alt=""></a><a class="float-right" href=""><img src="./assets/img/icon/close.png" alt=""></a></div>
                 <div class="card-body">
                   <p class="card-text">{{gc.descriptif | summarize: 30}}</p>
-                <div class="card-footer">{{gc.competences}}</div>
-                <div class="card-footer">Tags</div>
+                    <div class="card-footer"><a [routerLink]="['/home/groupes-competences/competence_list']">{{gc.competences}}</a>
+                        <router-outlet></router-outlet>
+                    </div>
+                <div class="card-footer"><a [routerLink]="['#']">Tags</a></div>
                 </div>
             </div>
         </div>

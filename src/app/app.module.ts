@@ -49,6 +49,7 @@ import { ListApprenantByProfilesSortieComponent } from './profiles-sortie/list-a
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthentificationInterceptor } from './_helpers/authentification.interceptor';
 import { SummarizePipe } from './summarize.pipe';
+import { ListCompetencesComponent } from './competences/list-competences/list-competences.component';
 
 
 @NgModule({
@@ -96,6 +97,7 @@ import { SummarizePipe } from './summarize.pipe';
     AddProfilesSortieComponent,
     ListApprenantByProfilesSortieComponent,
     SummarizePipe,
+    ListCompetencesComponent,
 
   ],
   imports: [
