@@ -11,6 +11,7 @@ import { Component, OnInit } from '@angular/core';
 export class GroupeCompetencesComponent implements OnInit {
 
   groupeCompetences : any = [];
+  competences : any = [];
   constructor(
     private groupeCompetenceService: GroupeCompetencesService,
     private competencesService: CompetencesService,
