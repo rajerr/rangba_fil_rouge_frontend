@@ -1,6 +1,6 @@
 .top{
     margin-top: 600px;
 }
-body{
-    background-image: src("assets/img/backGpng");
+div{
+    background: img("/assets/img/backG.png");
 }
